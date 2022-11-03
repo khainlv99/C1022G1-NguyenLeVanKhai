@@ -1,0 +1,14 @@
+Begin
+    Input a
+    a<=100
+    If (a>=75)
+        Output "Loại A"
+    Else if (60<=a)
+        Output "Loại B"
+    Else if (45<=a)
+        Output "Loại C"
+    Else if (35<=a)
+        Output "Loại D"
+    Eles
+        Output "Loại E"  
+End

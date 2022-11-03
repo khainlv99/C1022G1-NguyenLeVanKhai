@@ -1,0 +1,5 @@
+Begin
+	Input a
+	n = a*23000 
+	Display n
+End 
