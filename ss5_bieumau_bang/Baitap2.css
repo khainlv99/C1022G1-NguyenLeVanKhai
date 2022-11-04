@@ -1,0 +1,22 @@
+body{
+    background-color: aqua;
+}
+table{
+    background-color: white;
+    text-align: right;
+}
+.dau2{
+    color: chocolate;
+}
+.dau1{
+    text-align: right;
+    color: #2BD2FF;
+}
+.dau{
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+tr{
+    text-align: left;
+}
