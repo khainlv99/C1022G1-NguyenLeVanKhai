@@ -1,0 +1,14 @@
+Begin
+    Input N
+    i=1
+    While(i<=N)
+        input a1,a2,a3,...,aN
+        i=i+1
+    a1=max
+    i=2
+    While(ai<=N)
+        if (i>N)
+            max = ai
+        ai=ai+1
+    Output max
+End
