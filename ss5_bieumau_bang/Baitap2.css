@@ -1,9 +1,11 @@
 body{
     background-color: aqua;
+    background-image: url(https://haycafe.vn/wp-content/uploads/2021/12/Hinh-nen-cute.jpg);
 }
 table{
     background-color: white;
     text-align: right;
+    width: 100%;
 }
 .dau2{
     color: chocolate;
