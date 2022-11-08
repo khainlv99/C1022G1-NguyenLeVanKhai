@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="number" id="so1" placeholder="Nhập số thứ nhất">
+<input type="number" id="so2" placeholder="Nhập số thứ hai"><br><br>
+<button onclick= "Cong()">Addition(+)</button>
+<button onclick="Tru()">Subtraction(-)</button>
+<button onclick="Nhan()">Multiplication(X)</button>
+<button onclick="Chia()">Division(/)</button>
+<div id="result"><h3>Result Division</h3></div>
+</body>
+</html>
+<script>
+    function Cong() {
+        let so1 = document.getElementById("so1").value;
+        let so2 = document.getElementById("so2").value;
+        let result = Number(so1) + Number(so2);
+        document.getElementById("result").innerHTML = result;
+    }
+
+    function Tru() {
+        let so1 = document.getElementById("so1").value;
+        let so2 = document.getElementById("so2").value;
+        let result = Number(so1) - Number(so2);
+        document.getElementById("result").innerHTML = result;
+    }
+    function Nhan() {
+        let so1 = document.getElementById("so1").value;
+        let so2 = document.getElementById("so2").value;
+        let result = Number(so1) * Number(so2);
+        document.getElementById("result").innerHTML = result;
+    }
+    function Chia() {
+        let so1 = document.getElementById("so1").value;
+        let so2 = document.getElementById("so2").value;
+        let result = Number(so1) / Number(so2);
+        document.getElementById("result").innerHTML = result;
+    }
+</script>

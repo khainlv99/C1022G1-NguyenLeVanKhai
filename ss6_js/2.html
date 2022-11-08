@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+    <script src="khai.js"></script>
+</head>
+<body>
+<label for="amount"> Amount</label><br>
+<input id="amount" type="text" placeholder="Enter amount">
+<label for="currencyFrom">From Currency</label>
+<select name="currencyFrom" id="currencyFrom">
+    <option value="VND">Việt Nam</option>
+    <option value="USD">Đô La Mỹ</option>
+</select>
+<label for="currencyTo">To Currency</label>
+<select name="currencyTo" id="currencyTo">
+    <option value="USD">Đô la Mỹ</option>
+    <option value="VND">Việt Nam</option>
+</select>
+<button style="color: cornflowerblue" onclick="convertMoney()">Convert</button>
+<p id="result" style="color: blue"></p>
+<script>
+    function convertMoney() {
+        let currencyFrom = document.getElementById("currencyFrom").value;
+        let currencyTo = document.getElementById("currencyTo").value;
+        let amount = parseFloat(document.getElementById("amount").value);
+        let result = 0;
+        const VNDToUSD = 0.000043;
+        const USDToUSD = 1;
+        let arrConvertRateName = ["VND", "USD"];
+        let arrConvertRate = [VNDToUSD, USDToUSD];
+        let rate = 0;
+
+
+        // for (let i = 0; i < arrConvertRateName.length; i++) {
+        //     if (arrConvertRateName[i] === currencyFrom) {
+        //         rate = arrConvertRate[i];
+        //         break;
+        //     }
+        // }
+        // let fromToUSD = amount * rate;
+        //
+        // for (let i = 0; i < arrConvertRateName.length; i++) {
+        //     if (arrConvertRateName[i] === currencyTo) {
+        //         rate = arrConvertRate[i];
+        //         break;
+        //     }
+        // }
+        // result = fromToUSD / rate;
+        document.getElementById("result").innerHTML = "result: " + result.toFixed(2) + " " + currencyTo;
+    }
+</script>
+</body>
+</html>
