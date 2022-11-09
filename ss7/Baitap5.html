@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Nhập điểm bài kiểm tra")
+        let b = +prompt("Nhập điểm thi giữa kỳ")
+        let c = +prompt("Nhập điểm thi cuối kỳ")
+        let dtb;
+        dtb = (a+b*2+c*3)/6;
+        if(dtb>=85){
+            document.write('Giỏi')
+        }else if(dtb>=75){
+            document.write("Khá")
+        }else if(dtb>=50){
+            document.write("Trung bình")
+        }else if(dtb>=35){
+            document.write("Yếu")
+        }else
+            document.write("Kém")
+
+    </script>
+</body>
+</html>
