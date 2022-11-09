@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoa hồng</title>
+</head>
+<body>
+<script>
+    let sales=parseInt(prompt('Nhập doanh số bán hàng (VND)'));
+    let a= sales * 20 / 100;
+    let b= sales *10 / 100;
+    let c= sales * 8 /100;
+    if (sales < 1000000)
+        alert('Bạn không được nhận hoa hồng')
+    else if (sales >=1000000 && sales < 5000000)
+        alert('Hoa hồng bạn sẽ nhận là: '+c)
+    else if (sales >= 5000000 && sales< 20000000)
+        alert('Hoa hồng bạn sẽ nhận là: '+b);
+    else
+        alert('Hoa hồng bạn sẽ nhận là: '+a)
+</script>
+</body>
+</html>
