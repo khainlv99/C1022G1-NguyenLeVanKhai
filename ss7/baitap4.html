@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="bai4"></div>
+<script>
+    let a = +prompt("Nhap so a");
+    let b = +prompt("Nhap so b");
+    let c = +prompt("Nhap so c");
+    let max;
+    if (a>b) {
+        if (a > c)
+            max = a;
+        else
+            max = c;
+    }else {
+        if (b > c)
+            max = b;
+        else
+            max = c;
+    }
+    document.getElementById('bai4').innerHTML='Số lớn nhất là '+max;
+</script>
+</body>
+</html>
