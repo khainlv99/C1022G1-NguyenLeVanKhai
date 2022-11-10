@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let soDien = +prompt("nhap vao so dien (kWh): ");
+        let tienDien;
+        if(soDien>=401){
+            tienDien= soDien*2907;
+            alert('hien thi tien dien' + tienDien)
+        }else if(soDien>=301){
+            tienDien= soDien*2834;
+            alert('hien thi tien dien' + tienDien);
+        }else if(soDien>=201){
+            tienDien=soDien*2536;
+            alert('hien thi tien dien' + tienDien);
+        }else if(soDien>=101){
+            tienDien=soDien*2014;
+            alert('hien thi tien dien' + tienDien);
+        }else if(soDien>=51) {
+            tienDien = soDien *1734;
+            alert('hien thi tien dien' + tienDien);
+        }else {
+            tienDien=soDien*1678;
+            alert('hien thi tien dien' + tienDien);
+        }
+    </script>
+</body>
+</html>

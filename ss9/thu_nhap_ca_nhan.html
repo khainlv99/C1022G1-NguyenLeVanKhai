@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 11</title>
+</head>
+<body>
+<div id="khai"></div>
+<script>
+    let tn=+prompt('Nhập thu nhập của bạn (triệu VND)')
+    let result;
+    if (tn>80)
+        result=tn*35/100-9.85
+    else if (tn >52)
+        result=tn*30/100 -5.85
+    else if (tn>32)
+        result=tn*25/100-3.25
+    else if (tn>18)
+        result= tn*20/100-1.62
+    else if (tn>10)
+        result=tn*15/100-0.75
+    else if (tn>5)
+        result=tn*10/100-0.25
+    else
+        result=tn*5/100;
+    document.getElementById('khai').innerHTML='Thuế thu nhập cá nhân bạn phải trả là: '+result.toFixed(2)+' triệu VND'
+</script>
+</body>
+</html>
