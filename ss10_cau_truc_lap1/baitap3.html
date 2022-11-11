@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="khai"></div>
+<script>
+    let a=0;
+    let b=1;
+    let c=a+b;
+    let result='0 1 1 ';
+    for (let i=3;i<20;i++){
+        a=b;
+        b=c;
+        c=a+b;
+        result= result + c + ' ';
+    }
+    document.getElementById('khai').innerHTML=result;
+</script>
+</body>
+</html>

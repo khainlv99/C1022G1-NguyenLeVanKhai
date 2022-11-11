@@ -10,21 +10,20 @@
     let a = +prompt("Nhập số a :");
     let b = +prompt("Nhập số b :");
     let c = +prompt("Nhập số c :");
-    let denta = (Math.pow(b,2)-4*a*c);
+    let denta = (Math.pow(b, 2) - 4 * a * c);
     let result;
     let result1;
     let result2;
-    if (a ==0 && b!=0) {
-        document.getElementById('khai').innerHTML = (-c)/b;
-    }
-    else if(denta>0){
-        result1 =((-b)+Math.sqrt(denta))/(2*a);
-        result2 =((-b)-Math.sqrt(denta))/(2*a);
-        document.getElementById('khai').innerHTML='Phương trình có 2 nghiệm: '+result1+' và '+result2;
-    }else if(denta==0) {
+    if (a == 0 && b != 0) {
+        document.getElementById('khai').innerHTML = (-c) / b;
+    } else if (denta > 0) {
+        result1 = ((-b) + Math.sqrt(denta)) / (2 * a);
+        result2 = ((-b) - Math.sqrt(denta)) / (2 * a);
+        document.getElementById('khai').innerHTML = 'Phương trình có 2 nghiệm: ' + result1 + ' và ' + result2;
+    } else if (denta == 0) {
         result = -b / 2 * a
-        document.getElementById('khai').innerHTML = 'Phuong trinh co nghiem:'+result;
-    }else{
+        document.getElementById('khai').innerHTML = 'Phuong trinh co nghiem:' + result;
+    } else {
         document.getElementById('khai').innerHTML = 'Phuong trinh vo nghiem'
     }
 </script>
