@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("nhập chiều dài ");
+    let b = +prompt("nhập chiều rộng");
+
+    for (let i = 1; i <= b; i++) {
+        for (let j = 1; j <= a; j++) {
+            if (i == 1 || i == b || j == 1 || j == a) {
+                document.writeln('*');
+            } else {
+                document.writeln('&nbsp&nbsp');
+            }
+        }
+        document.writeln('<br/>');
+    }
+
+
+</script>
+</body>
