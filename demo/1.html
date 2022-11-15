@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a=0;
+        let b=1;
+        let c=a+b;
+        let result='0 1 1';
+        count=0;
+        tong = 2;
+        while (count<17){
+            a=b;
+            b=c;
+            c=a+b;
+            result= result + c +'' + '<br>'
+            tong = tong +c;
+            count++
+        }
+        document.write(result + '<br>')
+        document.write(tong)
+    </script>
+</body>
+</html>
