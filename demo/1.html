@@ -6,22 +6,17 @@
 </head>
 <body>
     <script>
-        let a=0;
-        let b=1;
-        let c=a+b;
-        let result='0 1 1';
-        count=0;
-        tong = 2;
-        while (count<17){
-            a=b;
-            b=c;
-            c=a+b;
-            result= result + c +'' + '<br>'
-            tong = tong +c;
-            count++
-        }
-        document.write(result + '<br>')
-        document.write(tong)
+        let number= [
+            1,
+            2,
+            3
+        ]
+        // console.log(number.pop())
+        // console.log(number.push(4))
+        // console.log(number.shift())
+        // console.log(number.unshift(1))
+        number.splice(1,2)
+        console.log(number)
     </script>
 </body>
 </html>
