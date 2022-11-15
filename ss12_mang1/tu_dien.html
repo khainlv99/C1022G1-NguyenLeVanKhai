@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Anh Việt</h2>
+<form>
+    <input type="text" id="submit" name="search"/>
+    <input type="button" value="Tìm" onclick="dich()"/>
+    <p id="ketQua"></p>
+</form>
+<script>
+
+    let a = ['Hello', 'Hi', 'End'];
+    let b = ['Xin chào', 'Chào', 'Kết thúc'];
+    let flag = false;
+
+    function dich() {
+        let index = -1;
+        let word = document.getElementById('submit').value;
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] === word) {
+                index = i;
+                flag = true;
+                break;
+            }
+        }
+        if (!flag) {
+            document.getElementById('ketQua').innerHTML = 'Không tìm thấy nghĩa của từ.'
+        } else {
+            document.getElementById('ketQua').innerHTML = 'Nghĩa là: ' + b[index];
+        }
+    }
+
+
+</script>
+</body>
+</html>
