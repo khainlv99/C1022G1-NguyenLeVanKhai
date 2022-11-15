@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="dau"></div>
+<script>
+    let a = [];
+    let n = +prompt('Ban can bao nhieu phan tu?');
+    let max;
+    let dem = 0
+    for (let i = 1; i < n; i++) {
+        a[i] = +prompt('Nhap cho phan tu a[' + i + ']: ');
+        if (i == 1) {
+            max = +a[1];
+        }
+        if (a[i] > max) {
+            max = +a[i]
+            dem = i
+        }
+    }
+    document.getElementById("dau").innerHTML = 'So lon nhat la' + max + 'trong' + dem
+</script>
+</body>
+</html>

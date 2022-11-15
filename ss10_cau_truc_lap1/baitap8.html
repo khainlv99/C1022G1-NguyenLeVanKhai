@@ -12,16 +12,16 @@
         min = +prompt("Nhập giá trị min: ");
         max = +prompt("Nhập giá trị max");
         for (a = 1; a <= 3; a++) {
-            y = +prompt("đoán số: ");
+            y = +prompt("Mời bạn đoán số: ");
             x = Math.floor(Math.random() * max) + min;
             if (x == y) {
-                alert("Chúc mừng");
+                alert("Chúc mừng bạn đã nhập đúng");
                 break;
             } else {
                 if (y > x) {
-                    alert("Lớn hơn")
+                    alert("Lớn hơn số bạn dự đoán")
                 } else {
-                    alert("Nhỏ hơn")
+                    alert("Nhỏ hơn số bạn dự đoán")
                 }
             }
         }
