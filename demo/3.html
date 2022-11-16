@@ -5,19 +5,23 @@
     <title>Title</title>
 </head>
 <body>
-    <script>
-        for (let i=1;i<=100;i++){
-            if (i%3==0 && i%5==0) {
-                document.write('FizzBuzz' + '<br>')
-            }else if(i%3==0){
-                document.write('Fizz' + '<br>')
-            }else if(i%5==0){
-                document.write('Buzz' + '<br>')
-            }else {
-                document.write(i + '<br>')
+<script>
+    let mang = new Array(prompt("Nhập vào một chuỗi"))
+    let mangFix = [
+    document.write("Mảng gồm ["+mang+"]<br>")
+    for (let i=0; i<mang.length ; i++){
+        for (let j=0; j<mang[i].length; j++){
+            if(mang[i][j] == "-"){
+                mang[i][j] = "_"
+                mangFix.push("_")
+            }else{
+                mangFix.push(mang[i][j])
             }
 
         }
-    </script>
+    }
+    document.write("Mảng sửa gồm ["+mangFix.join("")+"]<br>")
+
+</script>
 </body>
 </html>

@@ -6,14 +6,14 @@
 </head>
 <body>
 <script>
-    let a = +prompt('Nhập vào độ dài của mảng')
-    let arr = [];
-    for (let i = 0; i < a; i++) {
-        arr[i] = +prompt('Nhập giá trị số nguyên')
-    }
-    document.write(arr + '<br>');
-    document.write(arr.reverse());
+    let a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
 
+    a.forEach((item, index) => {
+        console.log(`row ${index}`)
+        for (let value of item) {
+            console.log(value);
+        }
+    });
 </script>
 </body>
 </html>

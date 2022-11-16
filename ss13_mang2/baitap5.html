@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let chuoi1= prompt('Nhập vào các chuỗi ký tự')
+        let chuoi2 = prompt('Nhập vào các chuỗi ký tự')
+        let mang1 = chuoi1.split()
+        let mang2 = chuoi2.split()
+        let slag = true;
+        for (let i =0 ; i < chuoi1.length ;i++){
+            if (mang1[i]==mang2[i]){
+                slag = true;
+            }else{
+                slag = false;
+                document.write('Chuỗi không giống nhau')
+                break
+            }
+        }
+        if(slag){
+            document.write('chuỗi giống nhau' +
+                '+')
+        }
+    </script>
+</body>
+</html>

@@ -1,20 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<script>
-    let a = [];
-    let n = +prompt('Số phần tử bạn cần nhập');
-    for (let i = 0; i < n; i++) {
-        a[i] = prompt('Nhap cho phan tu la:  ' + i);
-        if ( a[i] === 'V') {
-            a.splice(i,1);
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+    <script>
+        let a = [];
+        for (let i = 0; i < 10; i++) {
+            a[i] = prompt('Nhap cho phan tu la:  ' + i);
+            let v = prompt('Nhập phần tử v')
+            if ( a[i] === v) {
+                for(let j=0;i<a.length;j++){
+                    a[j] = a[j+1]
+                }
+                i--;
+            }
+        document.write(a)
         }
-    }
-    document.write(a)
-</script>
-</body>
-</html>
+    </script>
+    </body>
+    </html>
