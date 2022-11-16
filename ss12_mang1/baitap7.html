@@ -1,23 +1,29 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-    </head>
-    <body>
-    <script>
-        let a = [];
-        for (let i = 0; i < 10; i++) {
-            a[i] = prompt('Nhap cho phan tu la:  ' + i);
-            let v = prompt('Nhập phần tử v')
-            if ( a[i] === v) {
-                for(let j=0;i<a.length;j++){
-                    a[j] = a[j+1]
-                }
-                i--;
+Tiểu Đạt
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let v = prompt('Nhập phần tử V:');
+    let n = prompt('Nhập số phần tử có trong mảng:')
+    for (let i = 0; i < n; i++) {
+        a[i] = prompt('Nhập phần tử thứ ' + i);
+    }
+    for (let j = 0; j < a.length; j++) {
+        if (a[j] === v) {
+            for (let k = j; k < a.length - 1; k++) {
+                a[k] = a[k + 1];
             }
-        document.write(a)
+            a[a.length - 1] = 0
+            j--
         }
-    </script>
-    </body>
-    </html>
+    }
+    console.log(a)
+
+</script>
+</body>
+</html>
