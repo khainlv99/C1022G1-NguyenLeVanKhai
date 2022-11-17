@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<label>Nhap ban kinh hinh tron</label><br>
+<input type="text" id="so1">
+<button onclick="khai()">Tim</button>
+<div id="ketQua"></div>
+<div id="ketQua1"></div>
+
+<script>
+    function khai() {
+        let a = document.getElementById('so1').value
+
+        function dienTich() {
+            return (a * a) * 3.14
+        }
+
+        function chuVi() {
+            return a * 2 * 3.14
+
+        }
+
+        document.getElementById("ketQua").innerHTML = dienTich()
+        document.getElementById("ketQua1").innerHTML = chuVi()
+    }
+
+</script>
+</body>
+</html>

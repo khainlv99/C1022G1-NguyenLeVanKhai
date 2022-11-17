@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<input type="text" id="so1">
+<button onclick="khai()">Tim</button>
+<div id="ketQua"></div>
+    <script>
+        function khai(){
+        let a = document.getElementById('so1').value
+            function binhPhuong(){
+                return a*a
+            }
+            document.getElementById("ketQua").innerHTML=binhPhuong(a)
+        }
+
+    </script>
+</body>
+</html>
