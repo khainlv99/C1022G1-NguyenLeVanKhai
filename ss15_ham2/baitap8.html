@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function daoNguoc(n) {
+        n.reverse();
+        return n;
+    }
+    let mangSoNguyen = [];
+    let n = +prompt('Bạn cần nhập bao nhiêu phần tử của mảng')
+    for(let i=0;i<n;i++){
+        mangSoNguyen[i]= +prompt('Nhập số phần tử [' + i +']')
+    }
+    let b = daoNguoc(mangSoNguyen);
+    document.write(b);
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = +prompt('nhap vao so a')
+        let b = +prompt('nhap vao so b')
+        let c = +prompt('nhap vao so c')
+        function soNhoNhat() {
+            if (a < b && a < c) {
+                return a;
+            }else if(b<a && b<c){
+                return b
+            }else {
+                return c
+            }
+        }
+        document.write('Số nhỏ nhất trong 3 số là : '+ soNhoNhat(a,b,c))
+    </script>
+</body>
+</html>
