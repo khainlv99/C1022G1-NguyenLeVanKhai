@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(c) {
+            this.c = c;
+        }
+
+        chuyenDoiF() {
+            return this.c * 1.8 + 32
+        }
+
+        chuyenDoiKenvin() {
+            return this.c + 273.15
+        }
+
+    }
+
+    let temperatureObj = new Temperature(20)
+    document.write("Nhiệt độ C chuyển đổi sang F là : " + temperatureObj.chuyenDoiF() + "<br>")
+    document.write("Nhiệt độ C chuyển đổi sang Kenvin là : " + temperatureObj.chuyenDoiKenvin())
+</script>
+</body>
+</html>
