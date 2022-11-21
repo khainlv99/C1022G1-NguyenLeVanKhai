@@ -7,15 +7,15 @@
 </head>
 <body>
 <input type="text" id="so1">
-<button onclick="khai()">Tim</button>
+<button onclick="tinhBinhPhuong()">Tim</button>
 <div id="ketQua"></div>
     <script>
-        function khai(){
-        let a = document.getElementById('so1').value
+        function tinhBinhPhuong(){
+        let a = document.getElementById('so1').value;
             function binhPhuong(){
-                return a*a
+                return a*a;
             }
-            document.getElementById("ketQua").innerHTML=binhPhuong(a)
+            document.getElementById("ketQua").innerHTML=binhPhuong(a);
         }
 
     </script>

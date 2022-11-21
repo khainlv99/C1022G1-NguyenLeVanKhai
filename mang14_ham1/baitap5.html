@@ -6,21 +6,24 @@
 </head>
 <body>
 <script>
-    let a= ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe' , 'Regulus']
+    let a = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
     let b = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major ', 'Leo']
-    function chuyenGiaTri(c){
-        for(let i=0; i<a.length; i++){
-            if(a[i]==c){
+
+    function chuyenGiaTri(c) {
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] == c) {
                 return i;
             }
-        }return -1
+        }
+        return -1
     }
-    let d = prompt(' người dùng nhập vào tên của ngôi sao ')
-    console.log(chuyenGiaTri(d))
-    if(chuyenGiaTri(d)>-1){
-        document.write(b[chuyenGiaTri(d)])
-    }else{
-        document.write('không tìm thấy')
+
+    let d = prompt(' người dùng nhập vào tên của ngôi sao ');
+    console.log(chuyenGiaTri(d));
+    if (chuyenGiaTri(d) > -1) {
+        document.write(b[chuyenGiaTri(d)]);
+    } else {
+        document.write('không tìm thấy');
     }
 </script>
 </body>
