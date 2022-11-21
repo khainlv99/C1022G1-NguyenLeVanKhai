@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,15 +7,16 @@
 </head>
 <body>
 <script>
-    let chuoi1= prompt('Nhập vào các chuỗi ký tự')
-    let a = chuoi1.split('')
-        let count = 0;
-        for (let i = 0; i < a.length; i++) {
-            if (a[i]/a[i] != 1 ) {
-                count++;
-            }
+    let a = prompt("Nhập bao nhiều phần tử bạn muốn?");
+    let str = [];
+    let dem = 0;
+    for (let i = 0; i < a; i++) {
+        str[i] = prompt("Mời bạn nhập các kí tự hoặc số");
+        if (str[i] != +str[i]) {
+            dem++;
         }
-        document.write("có " + count + " từ trong chuỗi");
+    }
+    document.write(dem + "<br>");
 </script>
 </body>
 </html>
