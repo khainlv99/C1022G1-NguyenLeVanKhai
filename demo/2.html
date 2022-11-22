@@ -6,14 +6,44 @@
 </head>
 <body>
 <script>
-    let a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
-
-    a.forEach((item, index) => {
-        console.log(`row ${index}`)
-        for (let value of item) {
-            console.log(value);
+    class Apple {
+        constructor(weight) {
+            this._weight = weight;
         }
-    });
+
+        getWeight() {
+            return this._weight;
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this._gender = gender;
+            this.weight = weight;
+        }
+        isMale() {
+            if (this.gender = "Nam") {
+                return this.gender
+            }
+        }
+        setGender(gender){
+            this._gender= gender;
+        }
+        checkApply(){
+
+        }
+        noi() {
+            return ""
+        }
+    }
+
+    let appleObj1 = new Apple(10)
+    let humanObj2 = new Human("Khai", "Nam", 12)
+    console.log(appleObj1)
+    console.log(humanObj2)
+    document.write(humanObj2.isMale() + "<br>")
+    document.write("Adam dang an tao"+humanObj2.noi())
 </script>
 </body>
 </html>

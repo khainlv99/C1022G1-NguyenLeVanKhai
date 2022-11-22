@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function myFunc() {
+        let args = [...arguments];
+        args.push(50);
+        return args;
+    }
+    console.log(myFunc(0, 1, 2, 3));
+</script>
+</body>
+</html>
