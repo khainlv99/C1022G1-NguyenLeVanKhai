@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = []
+        let b = []
+        let n = +prompt('Nhập độ dài của mảng:')
+        for (let i=0; i<n;i++){
+            a[i]= +prompt('nhập các phần tử có trong mảng [' + i +']')
+            b[0] = a[0]
+            b[i] = a[i]+a[i-1]
+        }
+        document.write(a + '<br>')
+        document.write(b)
+    </script>
+</body>
+</html>
