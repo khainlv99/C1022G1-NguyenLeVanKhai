@@ -5,21 +5,21 @@
     <title>Title</title>
 </head>
 <body>
-    <input type="text" id="tienLuong">
-    <button onclick="luongNV()">Tính tiền lương</button>
-    <div id="ketQua"></div>
+<input type="text" id="tienLuong">
+<button onclick="luongNV()">Tính tiền lương</button>
+<div id="ketQua"></div>
 <script>
     function luongNV() {
         let thue = 0;
         let tienLuong = document.getElementById('tienLuong').value;
-        if(tienLuong>=15000000){
-            thue = (tienLuong*20)/100
-        }else if(tienLuong>=7000000){
-            thue = (tienLuong*10)/100
-        }else {
-            thue = (tienLuong*5)/100
+        if (tienLuong >= 15000000) {
+            thue = (tienLuong * 20) / 100
+        } else if (tienLuong >= 7000000) {
+            thue = (tienLuong * 10) / 100
+        } else {
+            thue = (tienLuong * 5) / 100
         }
-        document.getElementById('ketQua').innerHTML= thue
+        document.getElementById('ketQua').innerHTML = thue
     }
 </script>
 </body>
