@@ -6,20 +6,20 @@
 </head>
 <body>
 <script>
-    let a = []
-    let b = []
-    let n = +prompt('Nhập độ dài của mảng:')
-    let max = a[0]/b[0]
+    let a = [];
+    let b = [];
+    let n = +prompt('Nhập độ dài của mảng:');
+    let max = a[0]/b[0];
     for (let i = 0; i < n; i++) {
-        a[i] = +prompt('nhập tử số : [' + i + ']')
-        b[i] = +prompt('nhập mẫu số : [' + i + ']')
-        let max = a[0]/b[0]
+        a[i] = +prompt('nhập tử số : [' + i + ']');
+        b[i] = +prompt('nhập mẫu số : [' + i + ']');
+        let max = a[0]/b[0];
         if (a[i]/b[i]>max){
-            let maxFraction = []
-            max = a[i]/b[i]
-            maxFraction.push(a[i],b[i])
-            document.write(maxFraction + '<br>')
-            document.write(max)
+            let maxFraction = [];
+            maxFraction.push(a[i],b[i]);
+            document.write(maxFraction + 'Là số lớn nhất ' + '<br>');
+            document.write( 'Chỉ số là ' + i);
+
         }
     }
 
