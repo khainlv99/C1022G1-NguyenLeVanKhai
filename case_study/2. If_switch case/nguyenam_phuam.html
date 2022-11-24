@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+        let arr = new Array('o', 'u', 'i', 'a', 'e' ,'O', 'U', 'I', 'A', 'E')
+        let kyTu = prompt('Nhập ký tự ;')
+        let e=0;
+        for (let i =0 ; i<arr.length;i++){
+            if (kyTu == arr[i]){
+                document.write('nguyen am')
+                break
+            }else {
+                e++;
+            }
+        }
+        if (e==arr.length) {
+            document.write('phu am')
+        }
+</script>
+</body>
+</html>
