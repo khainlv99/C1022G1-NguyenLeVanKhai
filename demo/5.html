@@ -6,12 +6,20 @@
 </head>
 <body>
 <script>
-    function myFunc() {
-        let args = [...arguments];
-        args.push(50);
-        return args;
+    let arr = new Array(-1, -3, 2)
+
+    function squareVal() {
+        let c = 0
+        for (let i = 0; i < arr.length; i++) {
+        }
+        c = arr[0]
+        arr[0] = arr[arr.length - 1]
+        arr[arr.length - 1] = c
+        return arr
     }
-    console.log(myFunc(0, 1, 2, 3));
+
+    document.write(squareVal())
+
 </script>
 </body>
 </html>
