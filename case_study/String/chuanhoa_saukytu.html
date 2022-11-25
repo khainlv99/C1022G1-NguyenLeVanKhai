@@ -16,19 +16,19 @@
     }
 
     function max(arr) {
-        let max = arr[0]
+        let max = arr[0];
         for (let j = 0; j < arr.length; j++) {
             if (arr[j] > max) {
-                arr[j] = max
+                arr[j] = max;
             }
         }
-        return max
+        return max;
     }
 
-    let a = prompt('Nhap chuoi muon chuyen doi')
+    let a = prompt('Nhap chuoi muon chuyen doi');
     document.write(titleCase(a) + '<br>');
     let arr = titleCase(a).split(' ');
-    document.writeln(max(arr))
+    document.writeln(max(arr));
 
 </script>
 </body>

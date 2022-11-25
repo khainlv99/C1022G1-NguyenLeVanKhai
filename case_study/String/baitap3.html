@@ -8,16 +8,16 @@
 <script>
     let str = prompt("Nhap xâu kí tự :") ;
     let str2 = prompt("Nhap xau ki tu :");
-    let mang1 = str.split('')
-    let mang2 = str2.split('')
-    let newArr = []
+    let mang1 = str.split('');
+    let mang2 = str2.split('');
+    let newArr = [];
     for (let i =0 ; i<mang2.length;i++){
         if(mang1.indexOf(mang2[i])!=-1){
-            newArr.push(mang2[i])
-            mang1.splice(mang1.indexOf(mang2[i]),1)
+            newArr.push(mang2[i]);
+            mang1.splice(mang1.indexOf(mang2[i]),1);
         }
     }
-    document.writeln(newArr.length)
+    document.writeln(newArr.length);
 </script>
 </body>
 </html>
