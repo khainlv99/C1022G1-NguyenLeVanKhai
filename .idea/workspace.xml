@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6ed1c8f8-08a3-47d9-b2ff-88df113e2e00" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/module_1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c10g-js-function/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c10g-js-function/.idea/c10g-js-function.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c10g-js-function/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c10g-js-function/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c10g-js-function/js/my_lib.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c10g-js-function/pass_by/pass_by_reference.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c10g-js-function/pass_by/pass_by_value.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c10g-js-function/question/test_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c10g-js-function/question/test_quiz_tu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c10g-js-function/test_10_first_prime_number.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c10g-js-function/test_hieu_2_so.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c10g-js-function/test_is_prime_number.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c10g-js-function/test_xac_dinh_so_le.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/2. If_switch case/luong_nhan_vien.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/2. If_switch case/nguyenam_phuam.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/5/baitap1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/5/baitap2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/5/baitap5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/Mang_Loop/baitap2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/Mang_Loop/baitap3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/Mang_Loop/baitap4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/Mang_Loop/baitap5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/Mang_Loop/prefix_sums.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/String/baitap2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/String/baitap3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/String/chuanhoa_saukytu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/ve_hinh/bai1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/ve_hinh/baitap2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/ve_hinh/baitap3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/ve_hinh/baitap4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/deom.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo1/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/làm lại/Mảng/baitap1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mang14_ham1/baitap1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mang14_ham1/baitap2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mang14_ham1/baitap3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mang14_ham1/baitap4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mang14_ham1/baitap5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mang14_ham1/so_nguyen_to.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10_cau_truc_lap1/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10_cau_truc_lap1/baitap1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10_cau_truc_lap1/baitap2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10_cau_truc_lap1/baitap3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10_cau_truc_lap1/baitap4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10_cau_truc_lap1/baitap6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10_cau_truc_lap1/baitap7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10_cau_truc_lap1/baitap8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10_cau_truc_lap1/bang_cuu_chuong.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10_cau_truc_lap1/so_nguyen_to.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap2/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap2/baitap2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap2/baitap3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap2/baitap4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12_mang1/baitap1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12_mang1/baitap2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12_mang1/baitap3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12_mang1/baitap4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12_mang1/baitap5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12_mang1/baitap6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12_mang1/baitap7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12_mang1/baitap8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12_mang1/baitap9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12_mang1/lam_quen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12_mang1/thuchanh1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12_mang1/tu_dien.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss13_mang2/baitap1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss13_mang2/baitap2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss13_mang2/baitap3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss13_mang2/baitap4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss13_mang2/baitap5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss13_mang2/baitap6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss15_ham2/baitap1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss15_ham2/baitap2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss15_ham2/baitap3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss15_ham2/baitap4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss15_ham2/baitap5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss15_ham2/baitap6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss15_ham2/baitap7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss15_ham2/baitap8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss15_ham2/baitap9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss16_oop/Temperature.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss16_oop/adam_eva.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss16_oop/congtac_bongden.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss16_oop/hinh_chu_nhat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss3_magia_luudo/Diem_trung_binh/Th2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss3_magia_luudo/Diem_trung_binh/bt1.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss3_magia_luudo/Diem_trung_binh/bt1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss3_magia_luudo/So_lon_nhat_trong_3_so/bt3.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss3_magia_luudo/So_lon_nhat_trong_3_so/bt3.drawio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss3_magia_luudo/So_lon_nhat_trong_3_so/bt3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss3_magia_luudo/So_lon_nhat_trong_day_so/bt4.nemo.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss3_magia_luudo/So_lon_nhat_trong_day_so/bt4.nemo.drawio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss3_magia_luudo/So_lon_nhat_trong_day_so/bt4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss3_magia_luudo/Tien_te/.$bt2.drawio.bkp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss3_magia_luudo/Tien_te/Th2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss3_magia_luudo/Tien_te/bt2.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss3_magia_luudo/Tien_te/bt2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss3_magia_luudo/Xep_loai/bt5.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss3_magia_luudo/Xep_loai/bt5.drawio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss3_magia_luudo/Xep_loai/bt5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss4_git_html/bai_tap/CV_ca_nhan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss4_git_html/bai_tap/List_danh_sach.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss4_git_html/hello.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss4_git_html/thuc_hanh/Thuchanh3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_bieumau_bang/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_bieumau_bang/Bai_tap3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_bieumau_bang/Bai_tap_nang_cao/Ban_co_vua.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_bieumau_bang/Bai_tap_nang_cao/Lich_thang10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_bieumau_bang/Baitap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_bieumau_bang/Form_dang_ky.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_bieumau_bang/Form_don_gian/Baitap2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_bieumau_bang/Form_don_gian/So_thich_cua_ban.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_bieumau_bang/Thuc_hanh1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_bieumau_bang/dang_ky_hoc_vien.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_bieumau_bang/survey_khach_hang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss6_js/Chuyen_doi_tien_te/Chuyen_doi_tien_te.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss6_js/Chuyen_doi_tien_te/bai1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss6_js/ung_dung_may_tinh.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8/2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8/Baitap1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8/Baitap3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8/Baitap5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8/Baitap6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8/Chi_so_can_nang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8/baitap2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8/baitap4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8/tinh_so_ngay.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9/Dien_tich_hinh_chu_nhat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9/Dien_tich_hinh_vuong.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9/Dien_tich_tam_giac.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9/Kiem_tra_tam_giac.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9/Kiem_tra_tuoi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9/Lai_ngan_hang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9/Phuong_trinh_bac1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9/Phuong_trinh_bac_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9/thu_nhap_ca_nhan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9/tinh_tien_dien.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2ILIibGnZoTFLiBWO5PxhD5usZu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ed1c8f8-08a3-47d9-b2ff-88df113e2e00" name="Default Changelist" comment="" />
+      <created>1669954564945</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669954564945</updated>
+      <workItem from="1669954567892" duration="149000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="150" key="FileChooserDialogImpl" timestamp="1669954708344">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="150" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1669954708344" />
+    <state x="209" y="29" key="new project wizard" timestamp="1669954715612">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="209" y="29" key="new project wizard/0.0.1536.816@0.0.1536.816" timestamp="1669954715612" />
+  </component>
+</project>
