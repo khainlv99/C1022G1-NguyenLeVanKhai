@@ -8,7 +8,7 @@ public class XoaPhanTu {
         int x;
         int index= -1;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("enter value need delete: ");
+        System.out.println("Nhập phần tử bạn muốn xóa: ");
         x = scanner.nextInt();
         for (int i = 0; i < arr.length; i++) {
             if(arr[i] == x) {
