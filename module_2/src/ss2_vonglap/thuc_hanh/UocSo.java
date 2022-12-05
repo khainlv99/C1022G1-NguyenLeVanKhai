@@ -1,4 +1,4 @@
-package ss2_vonglap.thuchanh;
+package ss2_vonglap.thuc_hanh;
 
 import java.util.Scanner;
 

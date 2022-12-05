@@ -1,4 +1,4 @@
-package ss1_java.thuchanh;
+package ss1_java.thuc_hanh;
 
 public class Main {
     public static void main(String[] args) {

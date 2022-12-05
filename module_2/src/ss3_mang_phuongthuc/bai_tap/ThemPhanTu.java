@@ -20,7 +20,7 @@ public class ThemPhanTu {
             }
             arr[index] = x;
             for (int array : arr) {
-                System.out.print(array + ",");
+                System.out.print(array + "," );
             }
         }
     }

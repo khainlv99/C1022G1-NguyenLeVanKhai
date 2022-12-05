@@ -18,6 +18,7 @@ public class MaxMangHaiChieu {
                 arr[i][j] = Integer.parseInt(scanner.nextLine());
             }
         }
+
         int max = arr[0][0];
         int indexRow = 0;
         int indexCol = 0;
