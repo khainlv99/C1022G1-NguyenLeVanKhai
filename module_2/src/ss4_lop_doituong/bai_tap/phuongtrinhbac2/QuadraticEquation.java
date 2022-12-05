@@ -1,4 +1,4 @@
-package ss4_lop_doituong.baitap.phuongtrinhbac2;
+package ss4_lop_doituong.bai_tap.phuongtrinhbac2;
 
 public class QuadraticEquation {
     private double a,b,c;

@@ -1,4 +1,4 @@
-package ss2_vonglap.baitap;
+package ss2_vonglap.bai_tap;
 
 public class SoNguyenTo1 {
     public static void main(String[] args) {

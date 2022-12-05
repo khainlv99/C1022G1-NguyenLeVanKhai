@@ -1,4 +1,4 @@
-package ss5_Accessmodifier_staticmethod_staticproperty.baitap.chighi_Java;
+package ss5_Accessmodifier_staticmethod_staticproperty.bai_tap.chighi_Java;
 
 public class RunStudent {
     public static void main(String[] args) {

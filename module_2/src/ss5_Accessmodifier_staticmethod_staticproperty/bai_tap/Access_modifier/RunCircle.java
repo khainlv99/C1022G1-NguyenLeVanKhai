@@ -1,4 +1,4 @@
-package ss5_Accessmodifier_staticmethod_staticproperty.baitap.Access_modifier;
+package ss5_Accessmodifier_staticmethod_staticproperty.bai_tap.Access_modifier;
 
 public class RunCircle {
     public static void main(String[] args) {

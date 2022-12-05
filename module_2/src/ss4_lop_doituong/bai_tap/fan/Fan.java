@@ -1,4 +1,4 @@
-package ss4_lop_doituong.baitap.fan;
+package ss4_lop_doituong.bai_tap.fan;
 
 public class Fan {
     public static final int SLOW = 1;

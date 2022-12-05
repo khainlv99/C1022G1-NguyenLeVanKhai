@@ -1,4 +1,4 @@
-package ss4_lop_doituong.baitap.phuongtrinhbac2;
+package ss4_lop_doituong.bai_tap.phuongtrinhbac2;
 import java.util.Scanner;
 
 public class RunQuadraticEquation {

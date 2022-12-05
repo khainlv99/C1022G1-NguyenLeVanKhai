@@ -1,4 +1,4 @@
-package ss3_mang_phuongthuc.baitap;
+package ss3_mang_phuongthuc.bai_tap;
 
 import java.util.Scanner;
 

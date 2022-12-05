@@ -1,4 +1,4 @@
-package ss4_lop_doituong.baitap.fan;
+package ss4_lop_doituong.bai_tap.fan;
 
 public class RunFan {
     public static void main(String[] args) {
