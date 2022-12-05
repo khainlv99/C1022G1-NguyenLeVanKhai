@@ -1,6 +1,6 @@
 package ss2_vonglap.bai_tap;
 
-public class SoNguyenTo1 {
+public class PrimeNumberOneHundred {
     public static void main(String[] args) {
         for (int i = 2; i < 100 ; i++) {
             boolean flag = true;

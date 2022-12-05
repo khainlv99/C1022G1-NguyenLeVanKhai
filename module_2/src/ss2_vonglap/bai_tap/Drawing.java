@@ -2,7 +2,7 @@ package ss2_vonglap.bai_tap;
 
 import java.util.Scanner;
 
-public class VeHinh {
+public class Drawing {
     public static void main(String[] args) {
         int luaChon = -1;
         Scanner scanner = new Scanner(System.in);

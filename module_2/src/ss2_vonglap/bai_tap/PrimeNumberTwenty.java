@@ -1,6 +1,6 @@
 package ss2_vonglap.bai_tap;
 
-public class SoNguyenTo {
+public class PrimeNumberTwenty {
     public static void main(String[] args) {
         int number = 20;
         int count = 0;
