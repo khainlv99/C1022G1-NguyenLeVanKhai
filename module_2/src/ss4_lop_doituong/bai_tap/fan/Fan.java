@@ -1,9 +1,9 @@
 package ss4_lop_doituong.bai_tap.fan;
 
 public class Fan {
-    public int SLOW = 1;
-    public int MEDIUM = 2;
-    public int FAST = 3;
+    public final int SLOW = 1;
+    public final int MEDIUM = 2;
+    public final int FAST = 3;
     private int speed = SLOW;
     private boolean on = false;
     private double radius = 5;
