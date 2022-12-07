@@ -4,24 +4,27 @@ import java.util.Scanner;
 
 public class TongCot {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Nhập dòng: ");
-        int row = Integer.parseInt(scanner.nextLine());
-        System.out.println("Nhập cột: ");
-        int col = Integer.parseInt(scanner.nextLine());
-        int arr[][] = new int[row][col];
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                System.out.println("Nhập phần tử của hàng " + (i + 1) + " cột " + (j + 1));
-                arr[i][j] = Integer.parseInt(scanner.nextLine());
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Độ dài mảng: ");
+        int m = Integer.parseInt(sc.nextLine());
+        System.out.println("Độ dài của 1 phần tử: ");
+        int n = Integer.parseInt(sc.nextLine());
+        int arr[][] = new int[m][n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.println("Nhập phần tử arr[" + i + "][" + j + "]");
+                arr[i][j] = Integer.parseInt(sc.nextLine());
             }
         }
-        System.out.println("Nhập cột cần tính tổng: ");
-        int colNum = Integer.parseInt(scanner.nextLine());
+        int column;
+        do {
+            System.out.println("Nhập vị trí cột bạn muốn: ");
+            column = Integer.parseInt(sc.nextLine());
+        } while (column < 0 || column > n - 1);
         int sum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sum += arr[i][colNum];
+        for (int i = 0; i < m; i++) {
+            sum += arr[i][column];
         }
-        System.out.println(sum);
+        System.out.println("Tổng cột: " + sum);
     }
 }

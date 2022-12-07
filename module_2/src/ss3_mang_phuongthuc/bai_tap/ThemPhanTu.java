@@ -1,5 +1,7 @@
 package ss3_mang_phuongthuc.bai_tap;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ThemPhanTu {
@@ -15,13 +17,12 @@ public class ThemPhanTu {
         if (index <= -1 || index >= arr.length) {
             System.out.println("không thể thêm phần tử");
         } else {
+            arr = Arrays.copyOf(arr,arr.length+1);
             for (int i = arr.length - 1; i > index; i--) {
                 arr[i] = arr[i - 1];
             }
             arr[index] = x;
-            for (int array : arr) {
-                System.out.print(array + "," );
-            }
+            System.out.println(Arrays.toString(arr));
         }
     }
 }
