@@ -1,4 +1,5 @@
 package ss4_lop_doituong.bai_tap.phuongtrinhbac2;
+
 import java.util.Scanner;
 
 public class RunQuadraticEquation {
@@ -10,7 +11,7 @@ public class RunQuadraticEquation {
         double b = scanner.nextDouble();
         System.out.println("nhập c: ");
         double c = scanner.nextDouble();
-        QuadraticEquation quadraticEquation = new QuadraticEquation(a,b,c);
+        QuadraticEquation quadraticEquation = new QuadraticEquation(a, b, c);
         double delta = quadraticEquation.getDiscriminant();
         System.out.println("Delta: " + delta);
         if (delta > 0) {
