@@ -1,16 +1,15 @@
 package ss5_Accessmodifier_staticmethod_staticproperty.bai_tap.chighi_Java;
 
 public class Student {
-    private String name = "Nguyễn Lê Văn Khải";
-    private String classes = "C10";
+    private String name = "John";
+    private String classes = "C02";
 
-    Student() {
-
+    public Student(String name, String classes) {
+        this.name = name;
+        this.classes = classes;
     }
+    public Student(){
 
-    Student(String n, String cl) {
-        name = n;
-        classes = cl;
     }
 
     public void setName(String name) {
