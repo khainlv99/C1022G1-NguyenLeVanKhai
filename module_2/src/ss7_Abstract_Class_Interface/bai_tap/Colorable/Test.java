@@ -11,8 +11,8 @@ public class Test {
         for (Shape element : shapes) {
             element.areaCalculator();
             System.out.println(element.getName() + " Area " + " = " + element.getArea());
-            if (element instanceof Colorable) {
-                ((Colorable) element).howToColor();
+            if (element instanceof IColorable) {
+                ((IColorable) element).howToColor();
                 System.out.println("\n");
             }
         }
