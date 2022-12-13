@@ -1,8 +1,7 @@
 package ss7_Abstract_Class_Interface.bai_tap.Colorable;
 
-public class Square extends Shape implements IColorable {
+public class Square extends Shape{
     private double edge;
-    private double areaSquare;
 
     public Square() {
 
@@ -27,16 +26,19 @@ public class Square extends Shape implements IColorable {
 
     @Override
     public double getArea() {
-        return areaSquare;
+        return this.edge * this.edge;
     }
 
     @Override
-    public void areaCalculator() {
-        areaSquare = this.edge * this.edge;
+    public String toString() {
+        return "Square{" +
+                "edge=" + edge +
+                ", areaSquare=" + getArea() +
+                '}';
     }
 
-    @Override
     public void howToColor() {
         System.out.println("Color all four sides");
     }
+
 }

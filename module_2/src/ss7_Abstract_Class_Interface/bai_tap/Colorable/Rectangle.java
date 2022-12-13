@@ -3,7 +3,6 @@ package ss7_Abstract_Class_Interface.bai_tap.Colorable;
 public class Rectangle extends Shape {
     private double height;
     private double width;
-    private double areaRectangle;
 
     public Rectangle() {
 
@@ -21,10 +20,21 @@ public class Rectangle extends Shape {
 
     @Override
     public double getArea() {
-        return areaRectangle;
+        return this.height * this.width;
     }
 
-    public void areaCalculator() {
-        areaRectangle = this.height * this.width;
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "height=" + height +
+                ", width=" + width +
+                ", areaRectangle=" + getArea() +
+                '}';
+    }
+
+    @Override
+    public void howToColor() {
+
     }
 }
