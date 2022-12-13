@@ -1,9 +1,16 @@
 package ss7_Abstract_Class_Interface.bai_tap.Resizeable;
 
 
-public class Square extends Rectangle {
+public class Square extends Shape {
     private double edge;
     private double areaSquare;
+
+    public Square() {
+    }
+
+    public Square(double edge) {
+        this.edge = edge;
+    }
 
     public double getEdge() {
         return edge;
@@ -21,33 +28,13 @@ public class Square extends Rectangle {
         this.areaSquare = areaSquare;
     }
 
-    public Square() {
-    }
-
-    public Square(double side) {
-        super(side, side);
-    }
-
-    public Square(double side, String color, boolean filled) {
-        super(side, side, color, filled);
-    }
-
-    public double getSide() {
-        return getWidth();
-    }
-
-    public void setSide(double side) {
-        setWidth(side);
-        setLength(side);
-    }
-
 
     @Override
     public String toString() {
-        return "A Square with side="
-                + getSide()
-                + ", which is a subclass of "
-                + super.toString();
+        return "Square{" +
+                "edge=" + edge +
+                ", areaSquare=" + areaSquare +
+                '}';
     }
 
     public void resize(double percent) {

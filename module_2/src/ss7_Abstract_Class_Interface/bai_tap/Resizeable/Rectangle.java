@@ -1,21 +1,14 @@
 package ss7_Abstract_Class_Interface.bai_tap.Resizeable;
 
-import ss6_kethua.thuc_hanh.Shape;
 
 public class Rectangle extends Shape {
-    private double width = 1.0;
-    private double length = 1.0;
+    private double width;
+    private double length;
 
     public Rectangle() {
     }
 
     public Rectangle(double width, double length) {
-        this.width = width;
-        this.length = length;
-    }
-
-    public Rectangle(double width, double length, String color, boolean filled) {
-        super(color, filled);
         this.width = width;
         this.length = length;
     }
@@ -40,18 +33,12 @@ public class Rectangle extends Shape {
         return this.width * this.length;
     }
 
-    public double getPerimeter() {
-        return 2 * (width + this.length);
-    }
-
     @Override
     public String toString() {
-        return "A Rectangle with width="
-                + getWidth()
-                + " and length="
-                + getLength()
-                + ", which is a subclass of "
-                + super.toString();
+        return "Rectangle{" +
+                "width=" + width +
+                ", length=" + length +
+                '}';
     }
 
     public void resize(double percent) {
