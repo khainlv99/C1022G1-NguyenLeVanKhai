@@ -1,7 +1,7 @@
 package ss7_Abstract_Class_Interface.bai_tap.Resizeable;
 
 
-public class Square extends Rectangle implements IResizeable {
+public class Square extends Rectangle {
     private double edge;
     private double areaSquare;
 
@@ -50,7 +50,6 @@ public class Square extends Rectangle implements IResizeable {
                 + super.toString();
     }
 
-    @Override
     public void resize(double percent) {
         System.out.println("Area square after: " + (this.getAreaSquare() + this.getAreaSquare() * percent / 100));
     }

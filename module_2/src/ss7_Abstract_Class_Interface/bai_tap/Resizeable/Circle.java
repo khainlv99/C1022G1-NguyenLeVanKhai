@@ -2,7 +2,7 @@ package ss7_Abstract_Class_Interface.bai_tap.Resizeable;
 
 import ss6_kethua.thuc_hanh.Shape;
 
-public class Circle extends Shape implements IResizeable {
+public class Circle extends Shape {
     private double radius = 1.0;
 
     public Circle() {
@@ -41,7 +41,6 @@ public class Circle extends Shape implements IResizeable {
                 + super.toString();
     }
 
-    @Override
     public void resize(double percent) {
         System.out.println("Area circle after: "+(this.getArea()+this.getArea()*percent/100));
     }

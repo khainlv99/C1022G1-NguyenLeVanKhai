@@ -8,11 +8,11 @@ public class Test {
         Rectangle rectangle = new Rectangle();
         Square square = new Square();
         circle.setRadius(7);
-        System.out.println("Area circle before:"+circle.getArea());
+        System.out.println("Area circle before:" + circle.getArea());
         circle.resize(Math.floor(Math.random() * (100 - 1 + 1) + 1));
         rectangle.setLength(4);
         rectangle.setWidth(3);
-        System.out.println("Area rectangle before:"+ rectangle.getArea());
+        System.out.println("Area rectangle before:" + rectangle.getArea());
         rectangle.resize(Math.floor(Math.random() * (100 - 1 + 1) + 1));
         square.setEdge(4);
         System.out.println("Area square before:" + square.getAreaSquare());

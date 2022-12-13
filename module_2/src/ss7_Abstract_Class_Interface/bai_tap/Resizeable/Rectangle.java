@@ -2,7 +2,7 @@ package ss7_Abstract_Class_Interface.bai_tap.Resizeable;
 
 import ss6_kethua.thuc_hanh.Shape;
 
-public class Rectangle extends Shape implements IResizeable {
+public class Rectangle extends Shape {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -54,7 +54,6 @@ public class Rectangle extends Shape implements IResizeable {
                 + super.toString();
     }
 
-    @Override
     public void resize(double percent) {
         System.out.println("Area rectangle after: " + (this.getArea() + this.getArea() * percent / 100));
     }
