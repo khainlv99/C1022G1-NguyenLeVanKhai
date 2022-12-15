@@ -1,4 +1,4 @@
-package ss11_stack_queue.bai_tap.dao_nguoc;
+package ss11_stack_queue.bai_tap;
 
 import java.util.Scanner;
 import java.util.Stack;
