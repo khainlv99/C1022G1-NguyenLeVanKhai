@@ -41,6 +41,6 @@ public class TestStudent {
                     productManager.sapXepGiamDan();
                     break;
             }
-        } while (choice < 6);
+        } while (choice < 8);
     }
 }
