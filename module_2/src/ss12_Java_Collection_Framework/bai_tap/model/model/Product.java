@@ -1,4 +1,4 @@
-package ss12_Java_Collection_Framework.bai_tap;
+package ss12_Java_Collection_Framework.bai_tap.model.model;
 
 public class Product{
     private String id;
