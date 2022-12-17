@@ -6,9 +6,9 @@ import java.util.*;
 
 public class ProductRepository implements IProductRepository{
     List<Product> products = new ArrayList<>();
-    Product product1 = new Product("1", "LV", 1000);
-    Product product2 = new Product("2", "Gucci", 2000);
-    Product product3 = new Product("3", "Channel", 3000);
+    Product product1 = new Product("1", "Khải", 1000000000);
+    Product product2 = new Product("2", "NyKhải", 2000000000);
+    Product product3 = new Product("3", "NycKhải", -1);
 
     {
         products.add(product1);
