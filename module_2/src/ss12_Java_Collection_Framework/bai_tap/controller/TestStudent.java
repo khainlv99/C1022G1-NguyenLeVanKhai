@@ -1,14 +1,13 @@
 package ss12_Java_Collection_Framework.bai_tap.controller;
-
-import ss12_Java_Collection_Framework.bai_tap.model.model.Product;
-import ss12_Java_Collection_Framework.bai_tap.model.service.ProductManager;
+import ss12_Java_Collection_Framework.bai_tap.model.service.ProductService;
 
 import java.util.Scanner;
 
 public class TestStudent {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ProductManager productManager = new ProductManager();
+        ProductService productManager = new ProductService();
+        ProductService productManager1 = new ProductService();
         int choice;
         do {
             System.out.println("1.Thêm sản phẩm\n" +

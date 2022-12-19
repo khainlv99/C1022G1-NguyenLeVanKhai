@@ -5,17 +5,13 @@ import ss12_Java_Collection_Framework.bai_tap.model.model.Product;
 import java.util.*;
 
 public class ProductRepository implements IProductRepository{
-    List<Product> products = new ArrayList<>();
-    Product product1 = new Product("1", "Khải", 1000000000);
-    Product product2 = new Product("2", "NyKhải", 2000000000);
-    Product product3 = new Product("3", "NycKhải", -1);
+    public static List<Product> products = new ArrayList<>();
 
-    {
-        products.add(product1);
-        products.add(product2);
-        products.add(product3);
+    static {
+        products.add(new Product("1", "Khải", 1000000000));
+        products.add(new Product("2", "NyKhải", 2000000000));
+        products.add(new Product("3", "NycKhải", -1));
     }
-
 
     @Override
     public void them() {
