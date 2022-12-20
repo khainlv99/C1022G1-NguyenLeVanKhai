@@ -8,20 +8,20 @@ public class ProductRepository implements IProductRepository{
     public static List<Product> products = new ArrayList<>();
 
     static {
-        products.add(new Product("1", "Khải", 1000000000));
-        products.add(new Product("2", "NyKhải", 2000000000));
-        products.add(new Product("3", "NycKhải", -1));
+        products.add(new Product(1, "Khải", 1000000000));
+        products.add(new Product(2, "NyKhải", 2000000000));
+        products.add(new Product(3, "NycKhải", -1));
     }
 
     @Override
     public void them() {
         Product product = new Product();
-        String id;
+        int id;
         String name;
         int price;
         System.out.print("Nhập vào id : ");
         Scanner scanner = new Scanner(System.in);
-        id = scanner.nextLine();
+        id = Integer.parseInt(scanner.nextLine());
         System.out.print("Nhập vào tên sản phầm : ");
         name = scanner.nextLine();
         System.out.print("Nhập giá sản phẩm : ");
@@ -36,44 +36,37 @@ public class ProductRepository implements IProductRepository{
     }
 
     @Override
-    public void suaID() {
-        String id, name;
-        int price;
-        System.out.print("\nNhập vào id sản phẩm bạn muốn chỉnh sửa : ");
-        Scanner scanner = new Scanner(System.in);
-        id = scanner.nextLine();
-        System.out.print("Chỉnh sửa tên : ");
-        name = scanner.nextLine();
-        System.out.print("Chỉnh sửa giá : ");
-        price = scanner.nextInt();
-        Product editProduct = new Product(id, name, price);
-        int n = 0;
-        for (Product product1 : products) {
-            if (product1.getId().equals(id)) {
-                n = products.indexOf(product1);
+    public void suaID(Product product) {
+        for (int i = 0; i < products.size() ; i++) {
+            if(products.get(i).getId() == product.getId()){
+                products.set(i,product);
+                break;
             }
         }
-        products.add(n, editProduct);
-        products.remove(n + 1);
-        for (Product product1 : products) {
-            System.out.println(product1);
-        }
+    }
 
+    @Override
+    public Product timKiem(int id) {
+        for (Product c: products) {
+            if (c.getId()==id){
+                return c;
+            }
+        }
+        return null;
     }
 
     @Override
     public void xoaID() {
-        String id;
+        int id;
         System.out.print("Nhập vào id sản phẩm bạn muốn xóa : ");
         Scanner scanner = new Scanner(System.in);
-        id = scanner.nextLine();
-        for (Product product1 : products) {
-            if (product1.getId().equals(id)) {
-                products.remove(product1);
+        id = Integer.parseInt(scanner.nextLine());
+        for (int i = 0; i < products.size(); i++) {
+            if (products.get(i).getId() == id){
+                products.remove(products.get(i));
             }
         }
     }
-
     @Override
     public void hienThi() {
         System.out.println("\nDanh sách sản phẩm : ");
@@ -89,12 +82,9 @@ public class ProductRepository implements IProductRepository{
         Scanner scanner = new Scanner(System.in);
         name = scanner.nextLine();
         for (Product product : products) {
-            if (product.getName().equals(name)) {
+            if (product.getName().contains(name)) {
                 System.out.println("Thông tin sản phẩm : " + product);
             }
-        }
-        for (Product product1 : products) {
-            System.out.println(product1);
         }
     }
 

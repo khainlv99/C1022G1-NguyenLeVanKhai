@@ -13,9 +13,15 @@ public class ProductService extends Product implements IProductService {
     }
 
     @Override
-    public void suaID() {
-        repository.suaID();
+    public void suaID(Product product) {
+        repository.suaID(product);
     }
+
+    @Override
+    public Product timKiem(int id) {
+        return repository.timKiem(id);
+    }
+
 
     @Override
     public void xoaID() {

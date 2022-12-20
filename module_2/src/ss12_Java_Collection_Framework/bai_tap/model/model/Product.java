@@ -1,24 +1,24 @@
 package ss12_Java_Collection_Framework.bai_tap.model.model;
 
-public class Product{
-    private String id;
+public class Product {
+    private int id;
     private String name;
     private int price;
 
     public Product() {
     }
 
-    public Product(String id, String name, int price) {
+    public Product(int id, String name, int price) {
         this.id = id;
         this.name = name;
         this.price = price;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -41,7 +41,7 @@ public class Product{
     @Override
     public String toString() {
         return "Product{" +
-                "id='" + id + '\'' +
+                "id=" + id +
                 ", name='" + name + '\'' +
                 ", price=" + price +
                 '}';
