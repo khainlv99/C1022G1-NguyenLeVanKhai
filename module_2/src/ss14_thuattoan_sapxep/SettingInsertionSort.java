@@ -14,8 +14,7 @@ public class SettingInsertionSort {
             list[k+1]= currentElement;
         }
     }
-
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập độ dài: ");
         int n = scanner.nextInt();

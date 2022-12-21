@@ -1,5 +1,7 @@
 package ss12_Java_Collection_Framework.bai_tap.controller;
 import ss12_Java_Collection_Framework.bai_tap.model.model.Product;
+import ss12_Java_Collection_Framework.bai_tap.model.repository.IProductRepository;
+import ss12_Java_Collection_Framework.bai_tap.model.service.IProductService;
 import ss12_Java_Collection_Framework.bai_tap.model.service.ProductService;
 
 import java.util.Scanner;
@@ -7,7 +9,7 @@ import java.util.Scanner;
 public class TestStudent {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ProductService productManager = new ProductService();
+        IProductService productManager = new ProductService();
         int choice;
         do {
             System.out.println("-------Menu-------\n" +

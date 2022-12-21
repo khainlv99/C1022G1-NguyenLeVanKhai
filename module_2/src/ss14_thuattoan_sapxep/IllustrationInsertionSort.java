@@ -16,7 +16,7 @@ public class IllustrationInsertionSort {
         }
     }
     public static void main(String[] args) {
-        int[] arrayInteger = {1,8,4,6,19,21,13,14,77};
+        int[] arrayInteger = {7,3,8,5,4};
         IllustrationInsertionSort.sapXepChen(arrayInteger);
         for (Integer i : arrayInteger) {
             System.out.print(i + "   ");
