@@ -1,10 +1,9 @@
-package khai.baitap.file_csv;
+package ss16_io_text_file.baitap.file_csv;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.List;
 
 public class Test {
 

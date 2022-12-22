@@ -1,4 +1,4 @@
-package khai.thuchanh.ReadFileExample;
+package ss16_io_text_file.thuchanh.ReadFileExample;
 
 import java.io.BufferedReader;
 import java.io.File;

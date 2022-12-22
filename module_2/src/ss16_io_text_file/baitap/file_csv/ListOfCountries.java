@@ -1,4 +1,4 @@
-package khai.baitap.file_csv;
+package ss16_io_text_file.baitap.file_csv;
 
 public class ListOfCountries {
     private int id;
