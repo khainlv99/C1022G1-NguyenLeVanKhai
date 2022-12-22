@@ -1,5 +1,6 @@
 package ss15_debug;
 
+import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class Checking {
@@ -15,6 +16,12 @@ public class Checking {
         try {
             checkingTriangle(a,b,c);
         } catch (IllegalTriangleException e) {
+            System.out.println(e.getMessage());
+        } catch (NullPointerException e){
+            System.out.println(e.getMessage());
+        }catch (NumberFormatException e){
+            System.out.println(e.getMessage());
+        }catch (Exception e){
             System.out.println(e.getMessage());
         }
     }
