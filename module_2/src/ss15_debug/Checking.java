@@ -13,9 +13,18 @@ public class Checking {
         System.out.printf("Nhap vao c : ");
         c = Integer.parseInt(scanner.nextLine());
         try {
-            IllegalTriangleException.checkingTriangle(a,b,c);
+            checkingTriangle(a,b,c);
         } catch (IllegalTriangleException e) {
             System.out.println(e.getMessage());
+        }
+    }
+    public static void checkingTriangle(int a , int b , int c) throws IllegalTriangleException {
+        if ((a+b)<=c || (a+c)<=b || (b+c)<=a) {
+            throw  new IllegalTriangleException("3 canh tam giac khong hop le");
+        } else if (a<=0 || b<=0 || c<=0) {
+            throw new IllegalTriangleException("3 canh tam giac khong hop le");
+        } else {
+            System.out.println("Tam giac binh thuong");
         }
     }
 }
