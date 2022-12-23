@@ -7,18 +7,18 @@ import java.io.IOException;
 
 public class Test {
 
-    public static final String PATHFILE = "C:\\Users\\USER\\Documents\\CodeGym\\C1022G1-NguyenLeVanKhai\\module_2\\src\\khai\\baitap\\file_csv\\text.csv";
+    public static final String PATH_FILE = "C:\\Users\\USER\\Documents\\CodeGym\\C1022G1-NguyenLeVanKhai\\module_2\\src\\khai\\baitap\\file_csv\\text.csv";
 
     public static void main(String[] args) throws IOException {
         System.out.println("Read file CSV");
-        Test.readFile(PATHFILE);
+        Test.readFile(PATH_FILE);
         System.out.println("Done !!!");
     }
-    public static void readFile(String PATHFILE) throws IOException {
+    public static void readFile(String pathFile) throws IOException {
         FileReader fileReader = null;
         BufferedReader bufferedReader = null;
         try {
-            fileReader = new FileReader(PATHFILE);
+            fileReader = new FileReader(pathFile);
             bufferedReader = new BufferedReader(fileReader);
             String line;
             String arr[];

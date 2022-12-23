@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CopyFileText {
-    public static final String sourceFile = "C:\\Users\\USER\\Documents\\CodeGym\\C1022G1-NguyenLeVanKhai\\module_2\\src\\ss16_io_text_file\\baitap\\copy_file_text\\sourceFile.txt";
-    public static final String targetFile = "C:\\Users\\USER\\Documents\\CodeGym\\C1022G1-NguyenLeVanKhai\\module_2\\src\\ss16_io_text_file\\baitap\\copy_file_text\\target.txt";
+    public static final String SOURCE_FILE = "C:\\Users\\USER\\Documents\\CodeGym\\C1022G1-NguyenLeVanKhai\\module_2\\src\\ss16_io_text_file\\baitap\\copy_file_text\\sourceFile.txt";
+    public static final String TARGET_FILE = "C:\\Users\\USER\\Documents\\CodeGym\\C1022G1-NguyenLeVanKhai\\module_2\\src\\ss16_io_text_file\\baitap\\copy_file_text\\target.txt";
 
     public static List<String> readFile(String pathFile) {
         List<String> stringList = new ArrayList<>();
@@ -49,10 +49,10 @@ public class CopyFileText {
     public static void main(String[] args) throws IOException {
         System.out.println("Read file : ");
         List<String> stringList = new ArrayList<>();
-        stringList = CopyFileText.readFile(sourceFile);
+        stringList = CopyFileText.readFile(SOURCE_FILE);
         System.out.println("Done !!!");
         System.out.println("Write file : ");
-        CopyFileText.writeFile(targetFile,stringList);
+        CopyFileText.writeFile(TARGET_FILE,stringList);
         System.out.println("Done !!!");
     }
 }
