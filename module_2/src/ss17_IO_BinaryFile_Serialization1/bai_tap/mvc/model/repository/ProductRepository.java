@@ -70,6 +70,15 @@ public class ProductRepository implements IProductRepository {
 
     @Override
     public void seach() {
+        String name;
+        System.out.print("Nhập vào tên sản phẩm bạn muốn tìm : ");
+        Scanner scanner = new Scanner(System.in);
+        name = scanner.nextLine();
+        for (Product product : products) {
+            if (product.getName().contains(name)) {
+                System.out.println("Thông tin sản phẩm : " + product);
+            }
+        }
 
     }
 

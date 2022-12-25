@@ -24,6 +24,7 @@ public class Test {
                     iProductService.add();
                     break;
                 case 2:
+                    iProductService.seach();
                     break;
                 case 3:
                     iProductService.display();

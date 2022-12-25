@@ -18,6 +18,6 @@ public class ProductService implements IProductService{
 
     @Override
     public void seach() {
-
+        iProductRepository.seach();
     }
 }
