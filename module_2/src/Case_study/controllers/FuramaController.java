@@ -1,6 +1,7 @@
 package Case_study.controllers;
 
 
+import Case_study.models.model.Person.Employee;
 import Case_study.models.service.EmployeeService;
 import Case_study.models.service.IEmployeeService;
 
@@ -8,7 +9,7 @@ import java.util.Scanner;
 
 public class FuramaController {
     Scanner sc = new Scanner(System.in);
-    public int choice = -1;
+    public int choice = 0;
     IEmployeeService iEmployeeService = new EmployeeService();
     public void displayMainMenu() {
         System.out.println("------Menu------");
@@ -22,7 +23,7 @@ public class FuramaController {
 
         do {
             System.out.println("Mời bạn nhập lựa chọn: ");
-            choice = sc.nextInt();
+            choice = Integer.parseInt(sc.nextLine());
         } while (choice < 0 || choice > 6);
 
         switch (choice) {
@@ -55,15 +56,54 @@ public class FuramaController {
                 "--------------------");
         do {
             System.out.print("Please enter your valid choice (1->4): ");
-            choice = sc.nextInt();
-        } while (choice < 0 || choice > 4);
-        switch (choice) {
-            case 1:
-                iEmployeeService.display();
-                break;
-            case 2:
-                iEmployeeService.add();
-        }
+            choice = Integer.parseInt(sc.nextLine());
+
+            switch (choice) {
+                case 1:
+                    iEmployeeService.display();
+                    break;
+                case 2:
+                    iEmployeeService.add();
+                    break;
+                case 3:
+                    System.out.println("Nhập mã nhân viên :");
+                    int oldID =  Integer.parseInt(sc.nextLine());
+                    Employee c = iEmployeeService.search(oldID);
+                    if(c!= null){
+                        System.out.println("Input Name: ");
+                        String hoTen = sc.nextLine();
+                        System.out.println("Input DateOfBirth: ");
+                        String ngaySinh = sc.nextLine();
+                        System.out.println("Input Gender: ");
+                        String gioiTinh = sc.nextLine();
+                        System.out.println("Input IdentityCard: ");
+                        String chungMinhNhanDan = sc.nextLine();
+                        System.out.println("Input PhoneNumber: ");
+                        int soDienThoai = Integer.parseInt(sc.nextLine());
+                        System.out.println("Input Email: ");
+                        String email = sc.nextLine();
+                        System.out.println("Input Level: ");
+                        String trinhDo = sc.nextLine();
+                        System.out.println("Input Position: ");
+                        String viTri = sc.nextLine();
+                        System.out.println("Input Wage: ");
+                        int luong = Integer.parseInt(sc.nextLine());
+                        c.setFullName(hoTen);
+                        c.setDateOfBirth(ngaySinh);
+                        c.setGender(gioiTinh);
+                        c.setIdentityCard(chungMinhNhanDan);
+                        c.setPhoneNumber(soDienThoai);
+                        c.setEmail(email);
+                        c.setLevel(trinhDo);
+                        c.setPosition(viTri);
+                        c.setWage(luong);
+                        iEmployeeService.edit(c);
+                        break;
+                    }
+                case 4:
+                    displayMainMenu();
+            }
+        } while(true);
     }
 
     public void displayCustomerManagement() {
@@ -90,7 +130,7 @@ public class FuramaController {
 
         do {
             System.out.print("Please enter your valid choice (1->4): ");
-            choice = sc.nextInt();
+           int choice = sc.nextInt();
         } while (choice < 0 || choice > 4);
     }
 

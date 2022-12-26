@@ -1,6 +1,5 @@
 package ss12_Java_Collection_Framework.bai_tap.controller;
 import ss12_Java_Collection_Framework.bai_tap.model.model.Product;
-import ss12_Java_Collection_Framework.bai_tap.model.repository.IProductRepository;
 import ss12_Java_Collection_Framework.bai_tap.model.service.IProductService;
 import ss12_Java_Collection_Framework.bai_tap.model.service.ProductService;
 

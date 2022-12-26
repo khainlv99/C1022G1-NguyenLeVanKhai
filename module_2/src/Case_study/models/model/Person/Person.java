@@ -1,63 +1,63 @@
 package Case_study.models.model.Person;
 
 public class Person {
-    private String hoTen;
-    private String ngaySinh;
-    private String gioiTinh;
-    private String chungMinhNhanDan;
-    private String soDienThoai;
+    private String fullName;
+    private String dateOfBirth;
+    private String gender;
+    private String identityCard;
+    private int phoneNumber;
     private String email;
 
-    public Person(String hoTen, String ngaySinh, String gioiTinh, String chungMinhNhanDan, String soDienThoai, String email) {
-        this.hoTen = hoTen;
-        this.ngaySinh = ngaySinh;
-        this.gioiTinh = gioiTinh;
-        this.chungMinhNhanDan = chungMinhNhanDan;
-        this.soDienThoai = soDienThoai;
+    public Person(String fullName, String dateOfBirth, String gender, String identityCard, int phoneNumber, String email) {
+        this.fullName = fullName;
+        this.dateOfBirth = dateOfBirth;
+        this.gender = gender;
+        this.identityCard = identityCard;
+        this.phoneNumber = phoneNumber;
         this.email = email;
     }
 
     public Person() {
     }
 
-    public String getHoTen() {
-        return hoTen;
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setHoTen(String hoTen) {
-        this.hoTen = hoTen;
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
-    public String getNgaySinh() {
-        return ngaySinh;
+    public String getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setNgaySinh(String ngaySinh) {
-        this.ngaySinh = ngaySinh;
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
-    public String getGioiTinh() {
-        return gioiTinh;
+    public String getGender() {
+        return gender;
     }
 
-    public void setGioiTinh(String gioiTinh) {
-        this.gioiTinh = gioiTinh;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
-    public String getChungMinhNhanDan() {
-        return chungMinhNhanDan;
+    public String getIdentityCard() {
+        return identityCard;
     }
 
-    public void setChungMinhNhanDan(String chungMinhNhanDan) {
-        this.chungMinhNhanDan = chungMinhNhanDan;
+    public void setIdentityCard(String identityCard) {
+        this.identityCard = identityCard;
     }
 
-    public String getSoDienThoai() {
-        return soDienThoai;
+    public int getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setSoDienThoai(String soDienThoai) {
-        this.soDienThoai = soDienThoai;
+    public void setPhoneNumber(int phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String getEmail() {
@@ -71,11 +71,11 @@ public class Person {
     @Override
     public String toString() {
         return "Person{" +
-                "hoTen='" + hoTen + '\'' +
-                ", ngaySinh='" + ngaySinh + '\'' +
-                ", gioiTinh='" + gioiTinh + '\'' +
-                ", chungMinhNhanDan='" + chungMinhNhanDan + '\'' +
-                ", soDienThoai='" + soDienThoai + '\'' +
+                "fullName='" + fullName + '\'' +
+                ", dateOfBirth='" + dateOfBirth + '\'' +
+                ", gender='" + gender + '\'' +
+                ", identityCard='" + identityCard + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }
