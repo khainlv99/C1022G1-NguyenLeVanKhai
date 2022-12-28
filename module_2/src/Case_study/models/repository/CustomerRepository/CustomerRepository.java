@@ -34,6 +34,15 @@ public class CustomerRepository implements ICustomerRepository {
         System.out.println("Input address: ");
         address = scanner.nextLine();
         Customer customer = new Customer();
+        customer.setFullName(fullName);
+        customer.setDateOfBirth(dateOfBirth);
+        customer.setGender(gender);
+        customer.setIdentityCard(identityCard);
+        customer.setPhoneNumber(phoneNumber);
+        customer.setEmail(email);
+        customer.setCustomerID(customerID);
+        customer.setCustomerType(customerType);
+        customer.setAddress(address);
         customers.add(customer);
     }
 
@@ -47,7 +56,7 @@ public class CustomerRepository implements ICustomerRepository {
     @Override
     public void edit(Customer customer) {
         for (int i = 0; i < customers.size() ; i++) {
-            if (customers.get(i).getCustomerID() == customer.getCustomerID()){
+            if (customers.get(i).getCustomerID().equals(customer.getCustomerID())){
                 customers.set(i,customer);
             }
         }
@@ -56,7 +65,7 @@ public class CustomerRepository implements ICustomerRepository {
     @Override
     public Customer search(String maKhachHang) {
         for (Customer cus: customers) {
-            if (cus.getCustomerID() == maKhachHang){
+            if (cus.getCustomerID().equals(maKhachHang)){
                 return cus;
             }
         }

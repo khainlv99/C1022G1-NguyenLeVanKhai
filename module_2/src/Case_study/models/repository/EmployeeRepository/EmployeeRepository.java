@@ -65,7 +65,7 @@ public class EmployeeRepository implements IEmployeeRepository {
     @Override
     public void edit(Employee employee) {
         for (int i = 0; i < employeeList.size(); i++) {
-            if (employeeList.get(i).getEmployeeCode() == employee.getEmployeeCode()) {
+            if (employeeList.get(i).getEmployeeCode().equals(employee.getEmployeeCode())) {
                 employeeList.set(i, employee);
                 break;
             }
@@ -75,7 +75,7 @@ public class EmployeeRepository implements IEmployeeRepository {
     @Override
     public Employee search(String maNhanVien) {
         for (Employee epl : employeeList) {
-            if (epl.getEmployeeCode() == maNhanVien)
+            if (epl.getEmployeeCode().equals(maNhanVien))
                 return epl;
         }
         return null;
@@ -84,11 +84,11 @@ public class EmployeeRepository implements IEmployeeRepository {
     @Override
     public void delete() {
         String id;
-        System.out.print("Nhập vào id sản phẩm bạn muốn xóa : ");
+        System.out.print("Nhập vào id nhân viên : ");
         Scanner scanner = new Scanner(System.in);
         id = scanner.nextLine();
         for (int i = 0; i < employeeList.size(); i++) {
-            if (employeeList.get(i).getEmployeeCode() == id){
+            if (employeeList.get(i).getEmployeeCode().equals(id)){
                 employeeList.remove(employeeList.get(i));
             }
         }

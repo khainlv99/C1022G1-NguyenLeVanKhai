@@ -1,6 +1,7 @@
-package Case_study.models.service;
+package Case_study.models.service.CustomerService;
 
 import Case_study.models.model.Person.Customer;
+import Case_study.models.service.IService;
 
 public interface ICustomerService extends IService {
     void add();

@@ -1,10 +1,10 @@
-package Case_study.models.service;
+package Case_study.models.service.EmployeeService;
 
 import Case_study.models.model.Person.Employee;
 import Case_study.models.repository.EmployeeRepository.EmployeeRepository;
 import Case_study.models.repository.EmployeeRepository.IEmployeeRepository;
 
-public class EmployeeService implements IEmployeeService{
+public class EmployeeService implements IEmployeeService {
     IEmployeeRepository iEmployeeRepository = new EmployeeRepository();
     @Override
     public void add() {

@@ -1,10 +1,10 @@
-package Case_study.models.service;
+package Case_study.models.service.CustomerService;
 
 import Case_study.models.model.Person.Customer;
 import Case_study.models.repository.CustomerRepository.CustomerRepository;
 import Case_study.models.repository.CustomerRepository.ICustomerRepository;
 
-public class CustomerService implements ICustomerService{
+public class CustomerService implements ICustomerService {
     ICustomerRepository iCustomerRepository = new CustomerRepository();
     @Override
     public void add() {
@@ -18,11 +18,11 @@ public class CustomerService implements ICustomerService{
 
     @Override
     public void edit(Customer customer) {
-
+        iCustomerRepository.edit(customer);
     }
 
     @Override
     public Customer search(String maNhanVien) {
-        return null;
+        return iCustomerRepository.search(maNhanVien);
     }
 }

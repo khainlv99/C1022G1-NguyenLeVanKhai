@@ -1,11 +1,12 @@
 package Case_study.controllers;
 
 
+import Case_study.models.model.Person.Customer;
 import Case_study.models.model.Person.Employee;
-import Case_study.models.service.CustomerService;
-import Case_study.models.service.EmployeeService;
-import Case_study.models.service.ICustomerService;
-import Case_study.models.service.IEmployeeService;
+import Case_study.models.service.CustomerService.CustomerService;
+import Case_study.models.service.EmployeeService.EmployeeService;
+import Case_study.models.service.CustomerService.ICustomerService;
+import Case_study.models.service.EmployeeService.IEmployeeService;
 
 import java.util.Scanner;
 
@@ -125,8 +126,43 @@ public class FuramaController {
                 case 1:
                     iCustomerService.display();
                 case 2:
+                    iCustomerService.add();
                 case 3:
+                    System.out.println("Nhập mã khách hàng :");
+                    String oldID1 =  sc.nextLine();
+                    Customer d = iCustomerService.search(oldID1);
+                    if(d!= null){
+                        System.out.println("Input fullName: ");
+                        String fullName = sc.nextLine();
+                        System.out.println("Input dateOfBirth: ");
+                        String dateOfBirth = sc.nextLine();
+                        System.out.println("Input gender: ");
+                        String gender = sc.nextLine();
+                        System.out.println("Input identityCard: ");
+                        String identityCard = sc.nextLine();
+                        System.out.println("Input phoneNumber : ");
+                        String phoneNumber = sc.nextLine();
+                        System.out.println("Input email: ");
+                        String email = sc.nextLine();
+                        System.out.println("Input customerID: ");
+                        String customerID = sc.nextLine();
+                        System.out.println("Input customerType: ");
+                        String customerType = sc.nextLine();
+                        System.out.println("Input address: ");
+                        String address = sc.nextLine();
+                        d.setFullName(fullName);
+                        d.setDateOfBirth(dateOfBirth);
+                        d.setGender(gender);
+                        d.setIdentityCard(identityCard);
+                        d.setPhoneNumber(phoneNumber);
+                        d.setEmail(email);
+                        d.setCustomerID(customerID);
+                        d.setCustomerType(customerType);
+                        d.setAddress(address);
+                        iCustomerService.edit(d);
+                    }
                 case 4:
+                    displayMainMenu();
             }
         } while (true);
     }
