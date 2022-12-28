@@ -3,13 +3,13 @@ package Case_study.models.model.Facility;
 import Case_study.models.model.Facility.Facility;
 
 public class Room extends Facility {
-    private int dichVuMienPhi;
+    private String dichVuMienPhi;
 
-    public Room(int dichVuMienPhi) {
+    public Room(String dichVuMienPhi) {
         this.dichVuMienPhi = dichVuMienPhi;
     }
 
-    public Room(String tenDichVu, int dienTichSuDung, int chiPhiThue, int soLuongNguoi, String kieuThue, int dichVuMienPhi) {
+    public Room(String tenDichVu, String dienTichSuDung, String chiPhiThue, String soLuongNguoi, String kieuThue, String dichVuMienPhi) {
         super(tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoi, kieuThue);
         this.dichVuMienPhi = dichVuMienPhi;
     }
@@ -17,11 +17,11 @@ public class Room extends Facility {
     public Room() {
     }
 
-    public int getDichVuMienPhi() {
+    public String getDichVuMienPhi() {
         return dichVuMienPhi;
     }
 
-    public void setDichVuMienPhi(int dichVuMienPhi) {
+    public void setDichVuMienPhi(String dichVuMienPhi) {
         this.dichVuMienPhi = dichVuMienPhi;
     }
 

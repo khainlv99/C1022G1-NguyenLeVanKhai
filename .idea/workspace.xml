@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3182e36-50eb-4fee-8744-e560d823499a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/module_2/src/ss10_dsa_danhsach/thuc_hanh/MyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +22,27 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/module_2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ChuyenDoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss1_java.bai_tap.ChuyenDoi" />
+      <module name="C1022G1-NguyenLeVanKhai" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss1_java.bai_tap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ChuyenDoi" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -35,6 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670991895131</updated>
       <workItem from="1670991898996" duration="57000" />
+      <workItem from="1672063713600" duration="40000" />
     </task>
     <servers />
   </component>
@@ -42,10 +63,26 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="758" y="156" key="FileChooserDialogImpl" timestamp="1670991952093">
+    <state x="758" y="156" key="FileChooserDialogImpl" timestamp="1672063750571">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="758" y="156" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1670991952093" />
+    <state x="758" y="156" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1672063750571" />
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1672063753155">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1672063753155" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1672063753155">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1672063753155" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1672063753155">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1672063753155" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1672063753155">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1672063753155" />
     <state x="418" y="35" key="new project wizard" timestamp="1670991954994">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

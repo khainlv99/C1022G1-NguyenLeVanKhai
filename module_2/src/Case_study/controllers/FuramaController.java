@@ -2,7 +2,9 @@ package Case_study.controllers;
 
 
 import Case_study.models.model.Person.Employee;
+import Case_study.models.service.CustomerService;
 import Case_study.models.service.EmployeeService;
+import Case_study.models.service.ICustomerService;
 import Case_study.models.service.IEmployeeService;
 
 import java.util.Scanner;
@@ -11,6 +13,7 @@ public class FuramaController {
     Scanner sc = new Scanner(System.in);
     public int choice = 0;
     IEmployeeService iEmployeeService = new EmployeeService();
+    ICustomerService iCustomerService = new CustomerService();
     public void displayMainMenu() {
         System.out.println("------Menu------");
         System.out.println("1. Employee Management\n" +
@@ -52,12 +55,12 @@ public class FuramaController {
         System.out.println("1. Display list employees\n" +
                 "2. Add new employee\n" +
                 "3. Edit employee\n" +
-                "4. Return main menu\n" +
+                "4. Delete employee\n" +
+                "5. Return main menu\n" +
                 "--------------------");
         do {
             System.out.print("Please enter your valid choice (1->4): ");
             choice = Integer.parseInt(sc.nextLine());
-
             switch (choice) {
                 case 1:
                     iEmployeeService.display();
@@ -67,7 +70,7 @@ public class FuramaController {
                     break;
                 case 3:
                     System.out.println("Nhập mã nhân viên :");
-                    int oldID =  Integer.parseInt(sc.nextLine());
+                    String oldID =  sc.nextLine();
                     Employee c = iEmployeeService.search(oldID);
                     if(c!= null){
                         System.out.println("Input Name: ");
@@ -79,7 +82,7 @@ public class FuramaController {
                         System.out.println("Input IdentityCard: ");
                         String chungMinhNhanDan = sc.nextLine();
                         System.out.println("Input PhoneNumber: ");
-                        int soDienThoai = Integer.parseInt(sc.nextLine());
+                        String soDienThoai =sc.nextLine();
                         System.out.println("Input Email: ");
                         String email = sc.nextLine();
                         System.out.println("Input Level: ");
@@ -87,7 +90,7 @@ public class FuramaController {
                         System.out.println("Input Position: ");
                         String viTri = sc.nextLine();
                         System.out.println("Input Wage: ");
-                        int luong = Integer.parseInt(sc.nextLine());
+                        String luong =sc.nextLine();
                         c.setFullName(hoTen);
                         c.setDateOfBirth(ngaySinh);
                         c.setGender(gioiTinh);
@@ -101,6 +104,8 @@ public class FuramaController {
                         break;
                     }
                 case 4:
+                    iEmployeeService.delete();
+                case 5:
                     displayMainMenu();
             }
         } while(true);
@@ -113,11 +118,17 @@ public class FuramaController {
                 "3. Edit customer\n" +
                 "4. Return main menu\n" +
                 "--------------------------");
-
         do {
             System.out.print("Please enter your valid choice (1->4): ");
             choice = sc.nextInt();
-        } while (choice < 0 || choice > 4);
+            switch (choice) {
+                case 1:
+                    iCustomerService.display();
+                case 2:
+                case 3:
+                case 4:
+            }
+        } while (true);
     }
 
     public void displayFacilityManagement() {

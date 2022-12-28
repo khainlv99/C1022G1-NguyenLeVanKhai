@@ -1,12 +1,12 @@
 package Case_study.models.model.Person;
 
 public class Employee extends Person{
-    private int employeeCode;
+    private String employeeCode;
     private String level;
     private String position;
-    private int wage;
+    private String wage;
 
-    public Employee(String fullName, String dateOfBirth, String gender, String identityCard, int phoneNumber, String email, int employeeCode, String level, String position, int wage) {
+    public Employee(String fullName, String dateOfBirth, String gender, String identityCard, String phoneNumber, String email, String employeeCode, String level, String position, String wage) {
         super(fullName, dateOfBirth, gender, identityCard, phoneNumber, email);
         this.employeeCode = employeeCode;
         this.level = level;
@@ -17,11 +17,11 @@ public class Employee extends Person{
     public Employee() {
     }
 
-    public int getEmployeeCode() {
+    public String getEmployeeCode() {
         return employeeCode;
     }
 
-    public void setEmployeeCode(int employeeCode) {
+    public void setEmployeeCode(String employeeCode) {
         this.employeeCode = employeeCode;
     }
 
@@ -41,21 +41,21 @@ public class Employee extends Person{
         this.position = position;
     }
 
-    public int getWage() {
+    public String getWage() {
         return wage;
     }
 
-    public void setWage(int wage) {
+    public void setWage(String wage) {
         this.wage = wage;
     }
 
     @Override
     public String toString() {
         return "Employee{" +
-                "employeeCode=" + employeeCode +
+                "employeeCode='" + employeeCode + '\'' +
                 ", level='" + level + '\'' +
                 ", position='" + position + '\'' +
-                ", wage=" + wage +
-                '}';
+                ", wage='" + wage + '\'' +
+                "} " + super.toString();
     }
 }

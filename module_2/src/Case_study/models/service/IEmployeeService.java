@@ -6,5 +6,6 @@ public interface IEmployeeService extends IService {
     void add();
     void display();
     void edit(Employee employee);
-    Employee search(int maNhanVien);
+    Employee search(String maNhanVien);
+    void delete();
 }

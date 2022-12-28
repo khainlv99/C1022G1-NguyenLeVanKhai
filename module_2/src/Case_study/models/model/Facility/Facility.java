@@ -2,15 +2,15 @@ package Case_study.models.model.Facility;
 
 public abstract class Facility {
     private String tenDichVu;
-    private int dienTichSuDung;
-    private int chiPhiThue;
-    private int soLuongNguoi;
+    private String dienTichSuDung;
+    private String chiPhiThue;
+    private String soLuongNguoi;
     private String kieuThue;
 
     public Facility() {
     }
 
-    public Facility(String tenDichVu, int dienTichSuDung, int chiPhiThue, int soLuongNguoi, String kieuThue) {
+    public Facility(String tenDichVu, String dienTichSuDung, String chiPhiThue, String soLuongNguoi, String kieuThue) {
         this.tenDichVu = tenDichVu;
         this.dienTichSuDung = dienTichSuDung;
         this.chiPhiThue = chiPhiThue;
@@ -26,27 +26,27 @@ public abstract class Facility {
         this.tenDichVu = tenDichVu;
     }
 
-    public int getDienTichSuDung() {
+    public String getDienTichSuDung() {
         return dienTichSuDung;
     }
 
-    public void setDienTichSuDung(int dienTichSuDung) {
+    public void setDienTichSuDung(String dienTichSuDung) {
         this.dienTichSuDung = dienTichSuDung;
     }
 
-    public int getChiPhiThue() {
+    public String getChiPhiThue() {
         return chiPhiThue;
     }
 
-    public void setChiPhiThue(int chiPhiThue) {
+    public void setChiPhiThue(String chiPhiThue) {
         this.chiPhiThue = chiPhiThue;
     }
 
-    public int getSoLuongNguoi() {
+    public String getSoLuongNguoi() {
         return soLuongNguoi;
     }
 
-    public void setSoLuongNguoi(int soLuongNguoi) {
+    public void setSoLuongNguoi(String soLuongNguoi) {
         this.soLuongNguoi = soLuongNguoi;
     }
 

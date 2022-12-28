@@ -4,19 +4,19 @@ import Case_study.models.model.Facility.Facility;
 
 public class Villa extends Facility {
     private String tieuChuanPhong;
-    private int dienTichHoBoi;
-    private int soTang;
+    private String dienTichHoBoi;
+    private String soTang;
 
     public Villa() {
     }
 
-    public Villa(String tieuChuanPhong, int dienTichHoBoi, int soTang) {
+    public Villa(String tieuChuanPhong, String dienTichHoBoi, String soTang) {
         this.tieuChuanPhong = tieuChuanPhong;
         this.dienTichHoBoi = dienTichHoBoi;
         this.soTang = soTang;
     }
 
-    public Villa(String tenDichVu, int dienTichSuDung, int chiPhiThue, int soLuongNguoi, String kieuThue, String tieuChuanPhong, int dienTichHoBoi, int soTang) {
+    public Villa(String tenDichVu, String dienTichSuDung, String chiPhiThue, String soLuongNguoi, String kieuThue, String tieuChuanPhong, String dienTichHoBoi, String soTang) {
         super(tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoi, kieuThue);
         this.tieuChuanPhong = tieuChuanPhong;
         this.dienTichHoBoi = dienTichHoBoi;
@@ -31,19 +31,19 @@ public class Villa extends Facility {
         this.tieuChuanPhong = tieuChuanPhong;
     }
 
-    public int getDienTichHoBoi() {
+    public String getDienTichHoBoi() {
         return dienTichHoBoi;
     }
 
-    public void setDienTichHoBoi(int dienTichHoBoi) {
+    public void setDienTichHoBoi(String dienTichHoBoi) {
         this.dienTichHoBoi = dienTichHoBoi;
     }
 
-    public int getSoTang() {
+    public String getSoTang() {
         return soTang;
     }
 
-    public void setSoTang(int soTang) {
+    public void setSoTang(String soTang) {
         this.soTang = soTang;
     }
 

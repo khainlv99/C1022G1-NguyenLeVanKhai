@@ -1,8 +1,8 @@
 package Case_study.models.service;
 
 import Case_study.models.model.Person.Employee;
-import Case_study.models.repository.EmployeeRepository;
-import Case_study.models.repository.IEmployeeRepository;
+import Case_study.models.repository.EmployeeRepository.EmployeeRepository;
+import Case_study.models.repository.EmployeeRepository.IEmployeeRepository;
 
 public class EmployeeService implements IEmployeeService{
     IEmployeeRepository iEmployeeRepository = new EmployeeRepository();
@@ -22,7 +22,12 @@ public class EmployeeService implements IEmployeeService{
     }
 
     @Override
-    public Employee search(int maNhanVien) {
+    public Employee search(String maNhanVien) {
         return iEmployeeRepository.search(maNhanVien);
+    }
+
+    @Override
+    public void delete() {
+        iEmployeeRepository.delete();
     }
 }

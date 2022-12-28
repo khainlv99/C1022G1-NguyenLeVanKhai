@@ -1,4 +1,4 @@
-package Case_study.models.repository;
+package Case_study.models.repository.EmployeeRepository;
 
 import Case_study.models.model.Person.Employee;
 
@@ -9,13 +9,17 @@ import java.util.Scanner;
 public class EmployeeRepository implements IEmployeeRepository {
     static List<Employee> employeeList = new ArrayList<>();
     static {
-        employeeList.add(new Employee("Nguyen Khai", "03/08/1999", "Nam", "048099000777", 0702750320, "Khainguyenlevan@gmail.com", 001, "Đại học", "Giup viec", 130000000));
+        employeeList.add(new Employee("Nguyen Khai", "03/08/1999", "Nam", "0480990007771", "0702750320", "Khainguyenlevan@gmail.com", "001", "Đại học", "Giup viec", "130000000"));
+        employeeList.add(new Employee("Nguyen Khai1", "03/08/1999", "Nam", "0480990007772", "0702750320", "Khainguyenlevan@gmail.com", "002", "Đại học", "Giup viec", "140000000"));
+        employeeList.add(new Employee("Nguyen Khai2", "03/08/1999", "Nam", "0480990007773", "0702750320", "Khainguyenlevan@gmail.com", "003", "Đại học", "Giup viec", "150000000"));
+        employeeList.add(new Employee("Nguyen Khai3", "03/08/1999", "Nam", "0480990007774", "0702750320", "Khainguyenlevan@gmail.com", "004", "Đại học", "Giup viec", "160000000"));
+        employeeList.add(new Employee("Nguyen Khai4", "03/08/1999", "Nam", "0480990007775", "0702750320", "Khainguyenlevan@gmail.com", "005", "Đại học", "Giup viec", "170000000"));
     }
 
     @Override
     public void add() {
         String hoTen, ngaySinh, gioiTinh, chungMinhNhanDan, email, trinhDo, viTri;
-        int maNhanVien, luong, soDienThoai;
+        String maNhanVien, luong, soDienThoai;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input Name: ");
         hoTen = scanner.nextLine();
@@ -26,17 +30,17 @@ public class EmployeeRepository implements IEmployeeRepository {
         System.out.println("Input IdentityCard: ");
         chungMinhNhanDan = scanner.nextLine();
         System.out.println("Input PhoneNumber: ");
-        soDienThoai = Integer.parseInt(scanner.nextLine());
+        soDienThoai = scanner.nextLine();
         System.out.println("Input Email: ");
         email = scanner.nextLine();
         System.out.println("Input EmployeeCode: ");
-        maNhanVien = Integer.parseInt(scanner.nextLine());
+        maNhanVien = scanner.nextLine();
         System.out.println("Input Level: ");
         trinhDo = scanner.nextLine();
         System.out.println("Input Position: ");
         viTri = scanner.nextLine();
         System.out.println("Input Wage: ");
-        luong = Integer.parseInt(scanner.nextLine());
+        luong = scanner.nextLine();
         Employee employee = new Employee();
         employee.setFullName(hoTen);
         employee.setDateOfBirth(ngaySinh);
@@ -69,12 +73,25 @@ public class EmployeeRepository implements IEmployeeRepository {
     }
 
     @Override
-    public Employee search(int maNhanVien) {
+    public Employee search(String maNhanVien) {
         for (Employee epl : employeeList) {
             if (epl.getEmployeeCode() == maNhanVien)
                 return epl;
         }
         return null;
+    }
+
+    @Override
+    public void delete() {
+        String id;
+        System.out.print("Nhập vào id sản phẩm bạn muốn xóa : ");
+        Scanner scanner = new Scanner(System.in);
+        id = scanner.nextLine();
+        for (int i = 0; i < employeeList.size(); i++) {
+            if (employeeList.get(i).getEmployeeCode() == id){
+                employeeList.remove(employeeList.get(i));
+            }
+        }
     }
 
 

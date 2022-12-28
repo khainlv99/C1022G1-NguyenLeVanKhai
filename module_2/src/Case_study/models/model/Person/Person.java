@@ -5,10 +5,10 @@ public class Person {
     private String dateOfBirth;
     private String gender;
     private String identityCard;
-    private int phoneNumber;
+    private String phoneNumber;
     private String email;
 
-    public Person(String fullName, String dateOfBirth, String gender, String identityCard, int phoneNumber, String email) {
+    public Person(String fullName, String dateOfBirth, String gender, String identityCard, String phoneNumber, String email) {
         this.fullName = fullName;
         this.dateOfBirth = dateOfBirth;
         this.gender = gender;
@@ -52,11 +52,11 @@ public class Person {
         this.identityCard = identityCard;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
