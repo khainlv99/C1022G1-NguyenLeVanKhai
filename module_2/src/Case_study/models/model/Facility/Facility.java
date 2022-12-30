@@ -1,71 +1,71 @@
 package Case_study.models.model.Facility;
 
 public abstract class Facility {
-    private String tenDichVu;
-    private String dienTichSuDung;
-    private String chiPhiThue;
-    private String soLuongNguoi;
-    private String kieuThue;
+    private String serviceName;
+    private String usableArea;
+    private String rentalCosts;
+    private String numberPeople;
+    private String rentType;
 
     public Facility() {
     }
 
-    public Facility(String tenDichVu, String dienTichSuDung, String chiPhiThue, String soLuongNguoi, String kieuThue) {
-        this.tenDichVu = tenDichVu;
-        this.dienTichSuDung = dienTichSuDung;
-        this.chiPhiThue = chiPhiThue;
-        this.soLuongNguoi = soLuongNguoi;
-        this.kieuThue = kieuThue;
+    public Facility(String serviceName, String usableArea, String rentalCosts, String numberPeople, String rentType) {
+        this.serviceName = serviceName;
+        this.usableArea = usableArea;
+        this.rentalCosts = rentalCosts;
+        this.numberPeople = numberPeople;
+        this.rentType = rentType;
     }
 
-    public String getTenDichVu() {
-        return tenDichVu;
+    public String getServiceName() {
+        return serviceName;
     }
 
-    public void setTenDichVu(String tenDichVu) {
-        this.tenDichVu = tenDichVu;
+    public void setServiceName(String serviceName) {
+        this.serviceName = serviceName;
     }
 
-    public String getDienTichSuDung() {
-        return dienTichSuDung;
+    public String getUsableArea() {
+        return usableArea;
     }
 
-    public void setDienTichSuDung(String dienTichSuDung) {
-        this.dienTichSuDung = dienTichSuDung;
+    public void setUsableArea(String usableArea) {
+        this.usableArea = usableArea;
     }
 
-    public String getChiPhiThue() {
-        return chiPhiThue;
+    public String getRentalCosts() {
+        return rentalCosts;
     }
 
-    public void setChiPhiThue(String chiPhiThue) {
-        this.chiPhiThue = chiPhiThue;
+    public void setRentalCosts(String rentalCosts) {
+        this.rentalCosts = rentalCosts;
     }
 
-    public String getSoLuongNguoi() {
-        return soLuongNguoi;
+    public String getNumberPeople() {
+        return numberPeople;
     }
 
-    public void setSoLuongNguoi(String soLuongNguoi) {
-        this.soLuongNguoi = soLuongNguoi;
+    public void setNumberPeople(String numberPeople) {
+        this.numberPeople = numberPeople;
     }
 
-    public String getKieuThue() {
-        return kieuThue;
+    public String getRentType() {
+        return rentType;
     }
 
-    public void setKieuThue(String kieuThue) {
-        this.kieuThue = kieuThue;
+    public void setRentType(String rentType) {
+        this.rentType = rentType;
     }
 
     @Override
     public String toString() {
         return "Facility{" +
-                "tenDichVu='" + tenDichVu + '\'' +
-                ", dienTichSuDung=" + dienTichSuDung +
-                ", chiPhiThue=" + chiPhiThue +
-                ", soLuongNguoi=" + soLuongNguoi +
-                ", kieuThue='" + kieuThue + '\'' +
+                "serviceName='" + serviceName + '\'' +
+                ", usableArea='" + usableArea + '\'' +
+                ", rentalCosts='" + rentalCosts + '\'' +
+                ", numberPeople='" + numberPeople + '\'' +
+                ", rentType='" + rentType + '\'' +
                 '}';
     }
 }

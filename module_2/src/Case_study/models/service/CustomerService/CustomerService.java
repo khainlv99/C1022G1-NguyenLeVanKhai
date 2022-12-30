@@ -8,7 +8,7 @@ public class CustomerService implements ICustomerService {
     ICustomerRepository iCustomerRepository = new CustomerRepository();
     @Override
     public void add() {
-
+        iCustomerRepository.add();
     }
 
     @Override
