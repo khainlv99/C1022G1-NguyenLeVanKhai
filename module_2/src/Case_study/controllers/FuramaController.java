@@ -192,7 +192,10 @@ public class FuramaController {
                     iFacilityService.displayFacility();
                     break;
                 case 2:
-                    System.out.println("1:Room, 2:Villa");
+                    System.out.println("1. Add New Villa\n" +
+                            "2. Add New Room\n" +
+                            "3. Back to menu\n" +
+                            "--------------------------");
                      int number1 = Integer.parseInt(sc.nextLine());
                     if (number1 == 1) {
                         System.out.println("New name service: ");
@@ -211,7 +214,7 @@ public class FuramaController {
                         int number = Integer.parseInt(sc.nextLine());
                         Facility room = new Room(serviceName, usableArea, rentalCosts, numberPeople, rentType, freeService);
                         iFacilityService.add(room, number);
-                    } else {
+                    } else if (number1 == 2){
                         System.out.println("New name service: ");
                         String serviceName = sc.nextLine();
                         System.out.println("Usable are: ");
@@ -232,8 +235,10 @@ public class FuramaController {
                         int number = Integer.parseInt(sc.nextLine());
                         Facility villa = new Villa(serviceName, usableArea, rentalCosts, numberPeople, rentType, standardRoom, poolArea, floorNumber);
                         iFacilityService.add(villa, number);
-                        break;
+                    }else {
+                        displayFacilityManagement();
                     }
+                    break;
                 case 3:
                     iFacilityService.displayFacilityMaintenance();
                     break;
