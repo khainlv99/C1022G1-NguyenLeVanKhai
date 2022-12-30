@@ -193,8 +193,8 @@ public class FuramaController {
                     break;
                 case 2:
                     System.out.println("1:Room, 2:Villa");
-                    String number1 = sc.nextLine();
-                    if (number1 == "1") {
+                     int number1 = Integer.parseInt(sc.nextLine());
+                    if (number1 == 1) {
                         System.out.println("New name service: ");
                         String serviceName = sc.nextLine();
                         System.out.println("Usable are: ");
