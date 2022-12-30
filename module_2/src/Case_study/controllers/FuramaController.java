@@ -128,7 +128,7 @@ public class FuramaController {
                 "--------------------------");
         do {
             System.out.print("Please enter your valid choice (1->4): ");
-            choice = sc.nextInt();
+            choice = Integer.parseInt(sc.nextLine());
             switch (choice) {
                 case 1:
                     iCustomerService.display();
@@ -173,7 +173,6 @@ public class FuramaController {
                     }
                 case 4:
                     displayMainMenu();
-                    break;
             }
         } while (true);
     }
@@ -187,16 +186,15 @@ public class FuramaController {
                 "-------------------------");
         do {
             System.out.print("Please enter your valid choice (1->4): ");
-            int choice = sc.nextInt();
+            choice = Integer.parseInt(sc.nextLine());
             switch (choice) {
                 case 1:
                     iFacilityService.displayFacility();
                     break;
                 case 2:
-                    System.out.println("New room or villa (1:Room, 2:Villa)");
-                    int numb32 = Integer.parseInt(sc.nextLine());
-                    if (numb32 == 1) {
-//                                  String serviceName, String usableArea, String rentalCosts, String numberPeople, String rentType, String freeService
+                    System.out.println("1:Room, 2:Villa");
+                    String number1 = sc.nextLine();
+                    if (number1 == "1") {
                         System.out.println("New name service: ");
                         String serviceName = sc.nextLine();
                         System.out.println("Usable are: ");
@@ -214,7 +212,6 @@ public class FuramaController {
                         Facility room = new Room(serviceName, usableArea, rentalCosts, numberPeople, rentType, freeService);
                         iFacilityService.add(room, number);
                     } else {
-//                                  String serviceName, String usableArea, String rentalCosts, String numberPeople, String rentType, String standardRoom, String poolArea, String floorNumber
                         System.out.println("New name service: ");
                         String serviceName = sc.nextLine();
                         System.out.println("Usable are: ");
