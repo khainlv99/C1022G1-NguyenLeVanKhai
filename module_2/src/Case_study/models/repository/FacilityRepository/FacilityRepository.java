@@ -12,15 +12,18 @@ public class FacilityRepository implements IFacilityRepository{
     static Map<Facility,Integer> facilityIntegerMap1 = new LinkedHashMap<>();
     static {
         facilityIntegerMap.put(new Room("Ghế tình yêu", "10", "30000000000", "10", "ngay", "an sang"),1);
-        facilityIntegerMap.put(new Villa("ghế tình yêu", "10", "30000000000", "10", "tuan", "vip", "10", "3"),2);
-        facilityIntegerMap1.put(new Room("Ghế tình yêu1", "10", "30000000000", "10", "ngay", "an sang"),6);
+        facilityIntegerMap.put(new Villa("ghế tình yêu1", "10", "30000000000", "10", "tuan", "vip", "10", "3"),2);
+        facilityIntegerMap1.put(new Room("Ghế tình yêu2", "10", "30000000000", "10", "ngay", "an sang"),6);
+        facilityIntegerMap1.put(new Villa("ghế tình yêu3", "10", "30000000000", "10", "tuan", "vip", "10", "3"),6);
     }
 
 
     @Override
-    public void add() {
-        for (Map.Entry<Facility, Integer> room: facilityIntegerMap.entrySet()) {
-
+    public void add(Facility facility, int number) {
+        if (number<5){
+            facilityIntegerMap.put(facility,number);
+        }else {
+            facilityIntegerMap1.put(facility,number);
         }
     }
 

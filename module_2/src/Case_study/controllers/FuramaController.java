@@ -1,6 +1,9 @@
 package Case_study.controllers;
 
 
+import Case_study.models.model.Facility.Facility;
+import Case_study.models.model.Facility.Room;
+import Case_study.models.model.Facility.Villa;
 import Case_study.models.model.Person.Customer;
 import Case_study.models.model.Person.Employee;
 import Case_study.models.service.CustomerService.CustomerService;
@@ -190,12 +193,59 @@ public class FuramaController {
                     iFacilityService.displayFacility();
                     break;
                 case 2:
+                    System.out.println("New room or villa (1:Room, 2:Villa)");
+                    int numb32 = Integer.parseInt(sc.nextLine());
+                    if (numb32 == 1) {
+//                                  String serviceName, String usableArea, String rentalCosts, String numberPeople, String rentType, String freeService
+                        System.out.println("New name service: ");
+                        String serviceName = sc.nextLine();
+                        System.out.println("Usable are: ");
+                        String usableArea = sc.nextLine();
+                        System.out.println("Rental costs");
+                        String rentalCosts = sc.nextLine();
+                        System.out.println("Max number of people: ");
+                        String numberPeople = sc.nextLine();
+                        System.out.println("Rental type");
+                        String rentType = sc.nextLine();
+                        System.out.println("Free service: ");
+                        String freeService = sc.nextLine();
+                        System.out.println("Number of uses: ");
+                        int number = Integer.parseInt(sc.nextLine());
+                        Facility room = new Room(serviceName, usableArea, rentalCosts, numberPeople, rentType, freeService);
+                        iFacilityService.add(room, number);
+                    } else {
+//                                  String serviceName, String usableArea, String rentalCosts, String numberPeople, String rentType, String standardRoom, String poolArea, String floorNumber
+                        System.out.println("New name service: ");
+                        String serviceName = sc.nextLine();
+                        System.out.println("Usable are: ");
+                        String usableArea = sc.nextLine();
+                        System.out.println("Rental costs");
+                        String rentalCosts = sc.nextLine();
+                        System.out.println("Max number of people: ");
+                        String numberPeople = sc.nextLine();
+                        System.out.println("Rental type");
+                        String rentType = sc.nextLine();
+                        System.out.println("Room standard: ");
+                        String standardRoom = sc.nextLine();
+                        System.out.println("Pool area: ");
+                        String poolArea = sc.nextLine();
+                        System.out.println("Floors: ");
+                        String floorNumber = sc.nextLine();
+                        System.out.println("Number of uses: ");
+                        int number = Integer.parseInt(sc.nextLine());
+                        Facility villa = new Villa(serviceName, usableArea, rentalCosts, numberPeople, rentType, standardRoom, poolArea, floorNumber);
+                        iFacilityService.add(villa, number);
+                        break;
+                    }
                 case 3:
                     iFacilityService.displayFacilityMaintenance();
                     break;
+                case 4:
+                    displayMainMenu();
+                    break;
             }
-    } while(true);
-}
+        } while (true);
+    }
 
     public void displayBookingManagement() {
         System.out.println("---Booking Management--- ");
