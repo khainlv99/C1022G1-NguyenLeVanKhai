@@ -11,10 +11,10 @@ public class FacilityRepository implements IFacilityRepository{
     static Map<Facility,Integer> facilityIntegerMap = new LinkedHashMap<>();
     static Map<Facility,Integer> facilityIntegerMap1 = new LinkedHashMap<>();
     static {
-        facilityIntegerMap.put(new Room("Ghế tình yêu", "10", "30000000000", "10", "ngay", "an sang"),1);
-        facilityIntegerMap.put(new Villa("ghế tình yêu1", "10", "30000000000", "10", "tuan", "vip", "10", "3"),2);
-        facilityIntegerMap1.put(new Room("Ghế tình yêu2", "10", "30000000000", "10", "ngay", "an sang"),6);
-        facilityIntegerMap1.put(new Villa("ghế tình yêu3", "10", "30000000000", "10", "tuan", "vip", "10", "3"),6);
+        facilityIntegerMap.put(new Room("1","Ghế tình yêu", "10", "30000000000", "10", "ngay", "an sang"),1);
+        facilityIntegerMap.put(new Villa("2","ghế tình yêu1", "10", "30000000000", "10", "tuan", "vip", "10", "3"),2);
+        facilityIntegerMap1.put(new Room("3","Ghế tình yêu2", "10", "30000000000", "10", "ngay", "an sang"),6);
+        facilityIntegerMap1.put(new Villa("4","ghế tình yêu3", "10", "30000000000", "10", "tuan", "vip", "10", "3"),6);
     }
 
 

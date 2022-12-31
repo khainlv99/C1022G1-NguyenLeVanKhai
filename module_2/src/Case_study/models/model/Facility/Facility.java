@@ -1,6 +1,7 @@
 package Case_study.models.model.Facility;
 
 public abstract class Facility {
+    private String serviceCode;
     private String serviceName;
     private String usableArea;
     private String rentalCosts;
@@ -10,12 +11,21 @@ public abstract class Facility {
     public Facility() {
     }
 
-    public Facility(String serviceName, String usableArea, String rentalCosts, String numberPeople, String rentType) {
+    public Facility(String serviceCode, String serviceName, String usableArea, String rentalCosts, String numberPeople, String rentType) {
+        this.serviceCode = serviceCode;
         this.serviceName = serviceName;
         this.usableArea = usableArea;
         this.rentalCosts = rentalCosts;
         this.numberPeople = numberPeople;
         this.rentType = rentType;
+    }
+
+    public String getServiceCode() {
+        return serviceCode;
+    }
+
+    public void setServiceCode(String serviceCode) {
+        this.serviceCode = serviceCode;
     }
 
     public String getServiceName() {
@@ -61,7 +71,8 @@ public abstract class Facility {
     @Override
     public String toString() {
         return "Facility{" +
-                "serviceName='" + serviceName + '\'' +
+                "serviceCode='" + serviceCode + '\'' +
+                ", serviceName='" + serviceName + '\'' +
                 ", usableArea='" + usableArea + '\'' +
                 ", rentalCosts='" + rentalCosts + '\'' +
                 ", numberPeople='" + numberPeople + '\'' +
