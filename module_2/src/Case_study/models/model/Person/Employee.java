@@ -6,15 +6,15 @@ public class Employee extends Person{
     private String position;
     private String wage;
 
+    public Employee() {
+    }
+
     public Employee(String fullName, String dateOfBirth, String gender, String identityCard, String phoneNumber, String email, String employeeCode, String level, String position, String wage) {
         super(fullName, dateOfBirth, gender, identityCard, phoneNumber, email);
         this.employeeCode = employeeCode;
         this.level = level;
         this.position = position;
         this.wage = wage;
-    }
-
-    public Employee() {
     }
 
     public String getEmployeeCode() {
@@ -51,11 +51,11 @@ public class Employee extends Person{
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "Employee{" + super.toString()+
                 "employeeCode='" + employeeCode + '\'' +
                 ", level='" + level + '\'' +
                 ", position='" + position + '\'' +
                 ", wage='" + wage + '\'' +
-                "} " + super.toString();
+                "} ";
     }
 }
