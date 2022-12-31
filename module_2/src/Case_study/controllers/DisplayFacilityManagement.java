@@ -34,43 +34,81 @@ public class DisplayFacilityManagement extends FuramaController{
                         }while (!TrumCode.checkRegexServiceCode(serviceCode));
                         String serviceName;
                         do {
-                            System.out.println("New name service: ");
+                            System.out.println("Input Service Name: ");
                             serviceName = sc.nextLine();
                         }while (!TrumCode.checkRegexNameService(serviceName));
-                        System.out.println("Usable are: ");
-                        String usableArea = sc.nextLine();
-                        System.out.println("Rental costs");
-                        String rentalCosts = sc.nextLine();
-                        System.out.println("Max number of people: ");
-                        String numberPeople = sc.nextLine();
-                        System.out.println("Rental type");
-                        String rentType = sc.nextLine();
-                        System.out.println("Free service: ");
+                        String usableArea;
+                        do {
+                            System.out.println("Input Usable Area: ");
+                            usableArea = sc.nextLine();
+                        }while (!TrumCode.checkRegexArea(usableArea));
+                        String rentalCosts;
+                        do {
+                            System.out.println("Input Rental Costs: ");
+                            rentalCosts = sc.nextLine();
+                        }while (!TrumCode.checkRegexRentalCosts(rentalCosts));
+                        String numberPeople;
+                        do {
+                            System.out.println("Input Number People: ");
+                            numberPeople = sc.nextLine();
+                        }while (!TrumCode.checkRegexNumberPeople(numberPeople));
+                        String rentType;
+                        do {
+                            System.out.println("Input Rent Type: ");
+                            rentType = sc.nextLine();
+                        }while (!TrumCode.checkRegexRentalType(rentType));
+                        System.out.println("Input Free Service: ");
                         String freeService = sc.nextLine();
                         System.out.println("Number of uses: ");
                         int number = Integer.parseInt(sc.nextLine());
-                        Facility room = new Room(serviceName, usableArea, rentalCosts, numberPeople, rentType, freeService);
+                        Facility room = new Room(serviceCode,serviceName,usableArea,rentalCosts,numberPeople,rentType,freeService);
                         iFacilityService.add(room, number);
                     } else if (number1 == 2){
-                        System.out.println("New name service: ");
-                        String serviceName = sc.nextLine();
-                        System.out.println("Usable are: ");
-                        String usableArea = sc.nextLine();
-                        System.out.println("Rental costs");
-                        String rentalCosts = sc.nextLine();
-                        System.out.println("Max number of people: ");
-                        String numberPeople = sc.nextLine();
-                        System.out.println("Rental type");
-                        String rentType = sc.nextLine();
+                        String serviceCode;
+                        do {
+                            System.out.println("Input Service Code: ");
+                            serviceCode = sc.nextLine();
+                        }while (!TrumCode.checkRegexServiceCode(serviceCode));
+                        String serviceName;
+                        do {
+                            System.out.println("Input Service Name: ");
+                            serviceName = sc.nextLine();
+                        }while (!TrumCode.checkRegexNameService(serviceName));
+                        String usableArea;
+                        do {
+                            System.out.println("Input Usable Area: ");
+                            usableArea = sc.nextLine();
+                        }while (!TrumCode.checkRegexArea(usableArea));
+                        String rentalCosts;
+                        do {
+                            System.out.println("Input Rental Costs: ");
+                            rentalCosts = sc.nextLine();
+                        }while (!TrumCode.checkRegexRentalCosts(rentalCosts));
+                        String numberPeople;
+                        do {
+                            System.out.println("Input Number People: ");
+                            numberPeople = sc.nextLine();
+                        }while (!TrumCode.checkRegexNumberPeople(numberPeople));
+                        String rentType;
+                        do {
+                            System.out.println("Input Rent Type: ");
+                            rentType = sc.nextLine();
+                        }while (!TrumCode.checkRegexRentalType(rentType));
                         System.out.println("Room standard: ");
                         String standardRoom = sc.nextLine();
-                        System.out.println("Pool area: ");
-                        String poolArea = sc.nextLine();
-                        System.out.println("Floors: ");
-                        String floorNumber = sc.nextLine();
+                        String poolArea;
+                        do {
+                            System.out.println("Pool area: ");
+                            poolArea = sc.nextLine();
+                        }while (!TrumCode.checkRegexArea(poolArea));
+                        String floorNumber;
+                        do {
+                            System.out.println("Floors: ");
+                            floorNumber = sc.nextLine();
+                        }while (!TrumCode.checkRegexNumberFloors(floorNumber));
                         System.out.println("Number of uses: ");
                         int number = Integer.parseInt(sc.nextLine());
-                        Facility villa = new Villa(serviceName, usableArea, rentalCosts, numberPeople, rentType, standardRoom, poolArea, floorNumber);
+                        Facility villa = new Villa(serviceCode,serviceName,usableArea,rentalCosts,numberPeople,rentType,standardRoom,poolArea,floorNumber);
                         iFacilityService.add(villa, number);
                     }else {
                         displayFacilityManagement();
