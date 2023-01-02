@@ -4,6 +4,7 @@ import Case_study.models.model.Facility.Facility;
 import Case_study.models.model.Facility.Room;
 import Case_study.models.model.Facility.Villa;
 
+import java.io.*;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -17,7 +18,75 @@ public class FacilityRepository implements IFacilityRepository{
         facilityIntegerMap1.put(new Villa("SVVL-1114","Ghế tình yêu", "100", "3000", "10", "tuan", "vip", "10", "3"),6);
     }
 
+    public static Map<Facility, Integer> readFileRoom() {
+        Map<Facility, Integer> facilityList = new LinkedHashMap<>();
+        try {
+            File file = new File("C:\\Users\\USER\\Documents\\CodeGym\\C1022G1-NguyenLeVanKhai\\module_2\\src\\Case_study\\room.csv");
+            if (!file.exists()) {
+                throw new FileNotFoundException();
+            }
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                String[] arr = line.split(",");
+                Facility room = new Room(arr[0], arr[1], arr[2], arr[3], arr[4], arr[5], arr[6]);
+                facilityList.put(room, Integer.parseInt(arr[7]));
+            }
+            bufferedReader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return facilityList;
+    }
 
+    public static void writeFileRoom(Map<Facility, Integer> listMap) {
+        try {
+            FileWriter fileWriter = new FileWriter("C:\\Users\\USER\\Documents\\CodeGym\\C1022G1-NguyenLeVanKhai\\module_2\\src\\Case_study\\villa.csv");
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            for (Facility room : listMap.keySet()) {
+                bufferedWriter.write(room + "," + listMap.get(room));
+                bufferedWriter.newLine();
+            }
+            bufferedWriter.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    public static Map<Facility, Integer> readFile() {
+        Map<Facility, Integer> facilityList = new LinkedHashMap<>();
+        try {
+            File file = new File("C:\\Users\\USER\\Documents\\CodeGym\\C1022G1-NguyenLeVanKhai\\module_2\\src\\Case_study\\villa.csv");
+            if (!file.exists()) {
+                throw new FileNotFoundException();
+            }
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+            String line = "";
+            String[] arr;
+            while ((line = bufferedReader.readLine()) != null) {
+                arr = line.split(",");
+                Facility villa = new Villa(arr[0], arr[1], arr[2], arr[3], arr[4], arr[5], arr[6],arr[7],arr[8]);
+                facilityList.put(villa,Integer.parseInt(arr[9]));
+            }
+            bufferedReader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return facilityList;
+    }
+
+    public static void writeFile(Map<Facility, Integer> listMap) {
+        try {
+            FileWriter writer = new FileWriter("C:\\Users\\USER\\Documents\\CodeGym\\C1022G1-NguyenLeVanKhai\\module_2\\src\\Case_study\\villa.csv");
+            BufferedWriter bufferedWriter = new BufferedWriter(writer);
+            for (Facility villa : listMap.keySet()) {
+                bufferedWriter.write(villa + "," + listMap.get(villa));
+                bufferedWriter.newLine();
+            }
+            bufferedWriter.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     @Override
     public void add(Facility facility, int number) {
         if (number<5){

@@ -16,34 +16,34 @@ public class EmployeeRepository implements IEmployeeRepository {
         employeeList.add(new Employee("Nguyen Khai2", "03/08/1999", "Nam", "0480990007773", "0702750320", "Khainguyenlevan@gmail.com", "003", "Đại học", "Giup viec", "1500"));
         employeeList.add(new Employee("Nguyen Khai3", "03/08/1999", "Nam", "0480990007774", "0702750320", "Khainguyenlevan@gmail.com", "004", "Đại học", "Giup viec", "1600"));
         employeeList.add(new Employee("Nguyen Khai4", "03/08/1999", "Nam", "0480990007775", "0702750320", "Khainguyenlevan@gmail.com", "005", "Đại học", "Giup viec", "1700"));
+    }
+
+    public static void writeFile(List<Employee> list) {
         try {
-            writeFile("C:\\Users\\USER\\Documents\\CodeGym\\C1022G1-NguyenLeVanKhai\\module_2\\src\\Case_study\\employee.csv", employeeList);
-        } catch (IOException e) {
+            FileWriter writer = new FileWriter("C:\\Users\\USER\\Documents\\CodeGym\\C1022G1-NguyenLeVanKhai\\module_2\\src\\Case_study\\employee.csv");
+            BufferedWriter bufferedWriter = new BufferedWriter(writer);
+            for (Employee employee : list) {
+                bufferedWriter.write(employee.getEmployeeCode() + "," + employee.getFullName() + "," + employee.getDateOfBirth() + "," +
+                        employee.getPhoneNumber() + "," + employee.getGender() + "," + employee.getIdentityCard() + "," +
+                        employee.getEmail() + "," + employee.getLevel() + "," + employee.getPosition() + "," + employee.getWage());
+            }
+            bufferedWriter.close();
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    public static void writeFile(String path, List<Employee> employeeList) throws IOException {
-        FileWriter fileWriter = new FileWriter(path);
-        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-
-        for (Employee employee : employeeList) {
-            bufferedWriter.write(String.valueOf(employee));
-            bufferedWriter.newLine();
-        }
-        bufferedWriter.close();
-        fileWriter.close();
-    }
-
-    public List<Employee> readFile(String path) {
-        FileReader fileReader = null;
-        BufferedReader bufferedReader = null;
+    public static List<Employee> readFile() {
+        List<Employee> employeeList = new ArrayList<>();
         try {
-            fileReader = new FileReader(path);
-            bufferedReader = new BufferedReader(fileReader);
-            String line;
+            File file = new File("C:\\Users\\USER\\Documents\\CodeGym\\C1022G1-NguyenLeVanKhai\\module_2\\src\\Case_study\\employee.csv");
+            if (!file.exists()) {
+                throw new FileNotFoundException();
+            }
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+            String line = "";
             String[] temp;
-            while ((line = bufferedReader.readLine())!= null) {
+            while ((line = bufferedReader.readLine()) != null) {
                 temp = line.split(",");
                 String fullName = temp[0];
                 String dateOfBirth = temp[1];
@@ -58,14 +58,9 @@ public class EmployeeRepository implements IEmployeeRepository {
                 Employee employee = new Employee(fullName, dateOfBirth, gender, identityCard, phoneNumber, email, employeeCode, level, position, wage);
                 employeeList.add(employee);
             }
+            bufferedReader.close();
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                bufferedReader.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
         return employeeList;
     }
@@ -100,8 +95,9 @@ public class EmployeeRepository implements IEmployeeRepository {
 
     @Override
     public void display() {
-        for (Employee employee : readFile("C:\\Users\\USER\\Documents\\CodeGym\\C1022G1-NguyenLeVanKhai\\module_2\\src\\Case_study\\employee.csv")) {
-            System.out.println(employee);
+        List<Employee> employeeList = readFile();
+        for (Employee elm:employeeList){
+            System.out.println(elm);
         }
     }
 
