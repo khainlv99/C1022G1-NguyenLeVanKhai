@@ -16,11 +16,12 @@ public class EmployeeRepository implements IEmployeeRepository {
         employeeList.add(new Employee("Nguyen Khai2", "03/08/1999", "Nam", "0480990007773", "0702750320", "Khainguyenlevan@gmail.com", "003", "Đại học", "Giup viec", "1500"));
         employeeList.add(new Employee("Nguyen Khai3", "03/08/1999", "Nam", "0480990007774", "0702750320", "Khainguyenlevan@gmail.com", "004", "Đại học", "Giup viec", "1600"));
         employeeList.add(new Employee("Nguyen Khai4", "03/08/1999", "Nam", "0480990007775", "0702750320", "Khainguyenlevan@gmail.com", "005", "Đại học", "Giup viec", "1700"));
+        writeFile(employeeList);
     }
 
     public static void writeFile(List<Employee> list) {
         try {
-            FileWriter writer = new FileWriter("C:\\Users\\USER\\Documents\\CodeGym\\C1022G1-NguyenLeVanKhai\\module_2\\src\\Case_study\\employee.csv");
+            FileWriter writer = new FileWriter("src\\Case_study\\employee.csv");
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
             for (Employee employee : list) {
                 bufferedWriter.write(employee.getEmployeeCode() + "," + employee.getFullName() + "," + employee.getDateOfBirth() + "," +
@@ -34,17 +35,15 @@ public class EmployeeRepository implements IEmployeeRepository {
     }
 
     public static List<Employee> readFile() {
-        List<Employee> employeeList = new ArrayList<>();
         try {
-            File file = new File("C:\\Users\\USER\\Documents\\CodeGym\\C1022G1-NguyenLeVanKhai\\module_2\\src\\Case_study\\employee.csv");
+            File file = new File("src\\Case_study\\employee.csv");
             if (!file.exists()) {
                 throw new FileNotFoundException();
             }
             BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
-            String line = "";
-            String[] temp;
+            String line;
             while ((line = bufferedReader.readLine()) != null) {
-                temp = line.split(",");
+                String[] temp = line.split(",");
                 String fullName = temp[0];
                 String dateOfBirth = temp[1];
                 String gender = temp[2];
