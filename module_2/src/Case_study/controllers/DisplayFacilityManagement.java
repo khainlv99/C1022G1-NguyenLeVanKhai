@@ -1,6 +1,6 @@
 package Case_study.controllers;
 
-import Case_study.TrumCode;
+import Case_study.Regex;
 import Case_study.models.model.Facility.Facility;
 import Case_study.models.model.Facility.Room;
 import Case_study.models.model.Facility.Villa;
@@ -31,32 +31,32 @@ public class DisplayFacilityManagement extends FuramaController{
                         do {
                             System.out.println("Input Service Code: ");
                             serviceCode = sc.nextLine();
-                        }while (!TrumCode.checkRegexServiceCode(serviceCode));
+                        }while (!Regex.checkRegexServiceCode(serviceCode));
                         String serviceName;
                         do {
                             System.out.println("Input Service Name: ");
                             serviceName = sc.nextLine();
-                        }while (!TrumCode.checkRegexNameService(serviceName));
+                        }while (!Regex.checkRegexNameService(serviceName));
                         String usableArea;
                         do {
                             System.out.println("Input Usable Area: ");
                             usableArea = sc.nextLine();
-                        }while (!TrumCode.checkRegexArea(usableArea));
+                        }while (!Regex.checkRegexArea(usableArea));
                         String rentalCosts;
                         do {
                             System.out.println("Input Rental Costs: ");
                             rentalCosts = sc.nextLine();
-                        }while (!TrumCode.checkRegexRentalCosts(rentalCosts));
+                        }while (!Regex.checkRegexRentalCosts(rentalCosts));
                         String numberPeople;
                         do {
                             System.out.println("Input Number People: ");
                             numberPeople = sc.nextLine();
-                        }while (!TrumCode.checkRegexNumberPeople(numberPeople));
+                        }while (!Regex.checkRegexNumberPeople(numberPeople));
                         String rentType;
                         do {
                             System.out.println("Input Rent Type: ");
                             rentType = sc.nextLine();
-                        }while (!TrumCode.checkRegexRentalType(rentType));
+                        }while (!Regex.checkRegexRentalType(rentType));
                         System.out.println("Input Free Service: ");
                         String freeService = sc.nextLine();
                         System.out.println("Number of uses: ");
@@ -68,44 +68,44 @@ public class DisplayFacilityManagement extends FuramaController{
                         do {
                             System.out.println("Input Service Code: ");
                             serviceCode = sc.nextLine();
-                        }while (!TrumCode.checkRegexServiceCode(serviceCode));
+                        }while (!Regex.checkRegexServiceCode(serviceCode));
                         String serviceName;
                         do {
                             System.out.println("Input Service Name: ");
                             serviceName = sc.nextLine();
-                        }while (!TrumCode.checkRegexNameService(serviceName));
+                        }while (!Regex.checkRegexNameService(serviceName));
                         String usableArea;
                         do {
                             System.out.println("Input Usable Area: ");
                             usableArea = sc.nextLine();
-                        }while (!TrumCode.checkRegexArea(usableArea));
+                        }while (!Regex.checkRegexArea(usableArea));
                         String rentalCosts;
                         do {
                             System.out.println("Input Rental Costs: ");
                             rentalCosts = sc.nextLine();
-                        }while (!TrumCode.checkRegexRentalCosts(rentalCosts));
+                        }while (!Regex.checkRegexRentalCosts(rentalCosts));
                         String numberPeople;
                         do {
                             System.out.println("Input Number People: ");
                             numberPeople = sc.nextLine();
-                        }while (!TrumCode.checkRegexNumberPeople(numberPeople));
+                        }while (!Regex.checkRegexNumberPeople(numberPeople));
                         String rentType;
                         do {
                             System.out.println("Input Rent Type: ");
                             rentType = sc.nextLine();
-                        }while (!TrumCode.checkRegexRentalType(rentType));
+                        }while (!Regex.checkRegexRentalType(rentType));
                         System.out.println("Room standard: ");
                         String standardRoom = sc.nextLine();
                         String poolArea;
                         do {
                             System.out.println("Pool area: ");
                             poolArea = sc.nextLine();
-                        }while (!TrumCode.checkRegexArea(poolArea));
+                        }while (!Regex.checkRegexArea(poolArea));
                         String floorNumber;
                         do {
                             System.out.println("Floors: ");
                             floorNumber = sc.nextLine();
-                        }while (!TrumCode.checkRegexNumberFloors(floorNumber));
+                        }while (!Regex.checkRegexNumberFloors(floorNumber));
                         System.out.println("Number of uses: ");
                         int number = Integer.parseInt(sc.nextLine());
                         Facility villa = new Villa(serviceCode,serviceName,usableArea,rentalCosts,numberPeople,rentType,standardRoom,poolArea,floorNumber);

@@ -5,7 +5,7 @@ import java.nio.charset.Charset;
 import java.util.Locale;
 import java.util.stream.IntStream;
 
-public class TrumCode {
+public class Regex {
     private static final String REGEX_SERVICE_CODE = "^SV(VL|RO)-\\d{4}$";
     private static final String REGEX_NAME_SERVICE = "^[A-Z][a-z]*$";
     private static final String REGEX_AREA = "^[+-]?\\d+(\\.\\d+)?$";
