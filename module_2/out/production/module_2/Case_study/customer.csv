@@ -1,1 +1,1 @@
-Customer{Person{fullName='Khai Nguyen', dateOfBirth='03/08/1999', gender='Nam', identityCard='04809900644', phoneNumber='0702750320', email='khainguyenlevan@gmail.com'}customerID='001', customerType='Vip', address='Đà Nẵng'} 
+001,Khai Nguyen,03/08/1999,0702750320,Nam,04809900644,khainguyenlevan@gmail.com,Vip,Đà Nẵng

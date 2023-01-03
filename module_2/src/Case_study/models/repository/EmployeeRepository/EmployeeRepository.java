@@ -29,6 +29,7 @@ public class EmployeeRepository implements IEmployeeRepository {
                         employee.getEmail() + "," + employee.getLevel() + "," + employee.getPosition() + "," + employee.getWage());
             }
             bufferedWriter.close();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -56,6 +57,7 @@ public class EmployeeRepository implements IEmployeeRepository {
                 String wage = temp[9];
                 Employee employee = new Employee(fullName, dateOfBirth, gender, identityCard, phoneNumber, email, employeeCode, level, position, wage);
                 employeeList.add(employee);
+
             }
             bufferedReader.close();
         } catch (IOException e) {
