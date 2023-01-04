@@ -9,17 +9,6 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class FacilityRepository implements IFacilityRepository {
-    static Map<Facility, Integer> room = new LinkedHashMap<>();
-    static Map<Facility, Integer> villa = new LinkedHashMap<>();
-
-    static {
-        room.put(new Room("SVRO-1111", "Ghế tình yêu", "100", "3000", "10", "ngay", "an sang"), 1);
-        room.put(new Room("SVRO-1113", "Ghế tình yêu", "100", "3000", "10", "ngay", "an sang"), 6);
-        villa.put(new Villa("SVVL-1114", "Ghế tình yêu", "100", "3000", "10", "tuan", "vip", "10", "3"), 6);
-        villa.put(new Villa("SVVL-1112", "Ghế tình yêu", "100", "3000", "10", "tuan", "vip", "10", "3"), 2);
-        writeFileRoom(room);
-        writeFile(villa);
-    }
 
     public static Map<Facility, Integer> readFileRoom() {
         Map<Facility, Integer> facilityList = new LinkedHashMap<>();
@@ -44,12 +33,13 @@ public class FacilityRepository implements IFacilityRepository {
 
     public static void writeFileRoom(Map<Facility, Integer> listMap) {
         try {
-            FileWriter writer = new FileWriter("src\\Case_study\\room.csv");
+            FileWriter writer = new FileWriter("src\\Case_study\\room.csv",true);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
             for (Facility room : listMap.keySet()) {
-                bufferedWriter.write(room + "," + listMap.get(room));
+                bufferedWriter.write(room.toString1() + "," + listMap.get(room));
                 bufferedWriter.newLine();
             }
+            bufferedWriter.newLine();
             bufferedWriter.close();
         } catch (Exception e) {
             e.printStackTrace();
@@ -64,10 +54,9 @@ public class FacilityRepository implements IFacilityRepository {
                 throw new FileNotFoundException();
             }
             BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
-            String line = "";
-            String[] arr;
+            String line;
             while ((line = bufferedReader.readLine()) != null) {
-                arr = line.split(",");
+                String[] arr = line.split(",");
                 Facility villa = new Villa(arr[0], arr[1], arr[2], arr[3], arr[4], arr[5], arr[6], arr[7], arr[8]);
                 facilityList.put(villa, Integer.parseInt(arr[9]));
             }
@@ -80,10 +69,10 @@ public class FacilityRepository implements IFacilityRepository {
 
     public static void writeFile(Map<Facility, Integer> listMap) {
         try {
-            FileWriter writer = new FileWriter("src\\Case_study\\villa.csv");
+            FileWriter writer = new FileWriter("src\\Case_study\\villa.csv",true);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
             for (Facility villa : listMap.keySet()) {
-                bufferedWriter.write(villa + "," + listMap.get(villa));
+                bufferedWriter.write(villa.toString1() + "," + listMap.get(villa));
                 bufferedWriter.newLine();
             }
             bufferedWriter.close();
@@ -93,26 +82,36 @@ public class FacilityRepository implements IFacilityRepository {
     }
 
     @Override
-    public void add(Facility facility, int number) {
-        if (number < 5) {
-            room.put(facility, number);
-        } else {
-            villa.put(facility, number);
-        }
+    public void addRoom(Facility facility, int number) {
+        Map<Facility, Integer> room = new LinkedHashMap<>();
+        room.put(facility, number);
+        writeFileRoom(room);
     }
 
     @Override
+    public void addVilla(Facility facility, int number) {
+        Map<Facility, Integer> villa = new LinkedHashMap<>();
+        villa.put(facility, number);
+        writeFile(villa);
+    }
+
+
+    @Override
     public void displayFacility() {
-        for (Map.Entry<Facility, Integer> room : room.entrySet()) {
-            System.out.println(room);
-        }
-        for (Map.Entry<Facility, Integer> room1 : villa.entrySet()) {
+        Map<Facility, Integer> room = readFileRoom();
+        Map<Facility, Integer> villa = readFile();
+        for (Map.Entry<Facility, Integer> room1 : room.entrySet()) {
             System.out.println(room1);
+        }
+        for (Map.Entry<Facility, Integer> villa1 : villa.entrySet()) {
+            System.out.println(villa1);
         }
     }
 
     @Override
     public void displayFacilityMaintenance() {
+        Map<Facility, Integer> room = readFileRoom();
+        Map<Facility, Integer> villa = readFile();
         for (Map.Entry<Facility, Integer> facility1 : room.entrySet())
             if (facility1.getValue() >= 5) {
                 System.out.println(facility1);

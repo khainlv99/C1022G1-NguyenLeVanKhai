@@ -1,0 +1,2 @@
+Room{freeService='an sang'} Facility{serviceCode='SVRO-1111', serviceName='Ghế tình yêu', usableArea='100', rentalCosts='3000', numberPeople='10', rentType='ngay'},1
+Room{freeService='an sang'} Facility{serviceCode='SVRO-1113', serviceName='Ghế tình yêu', usableArea='100', rentalCosts='3000', numberPeople='10', rentType='ngay'},6

@@ -56,7 +56,9 @@ public class DisplayCustomerManagement extends FuramaController{
                         break;
                     }
                 case 4:
-                    displayMainMenu();
+                    FuramaController furamaController = new FuramaController();
+                    furamaController.displayMainMenu();
+                    break;
             }
         } while (true);
     }

@@ -58,8 +58,11 @@ public class DisplayEmployeeManagement extends FuramaController{
                     }
                 case 4:
                     iEmployeeService.delete();
+                    break;
                 case 5:
-                    displayMainMenu();
+                    FuramaController furamaController = new FuramaController();
+                    furamaController.displayMainMenu();
+                    break;
             }
         } while (true);
     }

@@ -7,9 +7,15 @@ import Case_study.models.repository.FacilityRepository.IFacilityRepository;
 public class FacilityService implements IFacilityService{
     IFacilityRepository iFacilityRepository = new FacilityRepository();
 
+
     @Override
-    public void add(Facility facility, int number) {
-        iFacilityRepository.add(facility,number);
+    public void addRoom(Facility facility, int number) {
+        iFacilityRepository.addRoom(facility,number);
+    }
+
+    @Override
+    public void addVilla(Facility facility, int number) {
+        iFacilityRepository.addVilla(facility,number);
     }
 
     @Override

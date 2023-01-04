@@ -31,68 +31,104 @@ public class DisplayFacilityManagement extends FuramaController{
                         do {
                             System.out.println("Input Service Code: ");
                             serviceCode = sc.nextLine();
+                            if (Regex.checkRegexServiceCode(serviceCode) == false){
+                                System.out.println("you typed wrong please re-enter ahihi idiot");
+                            }
                         }while (!Regex.checkRegexServiceCode(serviceCode));
                         String serviceName;
                         do {
                             System.out.println("Input Service Name: ");
                             serviceName = sc.nextLine();
+                            if (Regex.checkRegexNameService(serviceName) == false){
+                                System.out.println("you typed wrong please re-enter ahihi idiot");
+                            }
                         }while (!Regex.checkRegexNameService(serviceName));
                         String usableArea;
                         do {
                             System.out.println("Input Usable Area: ");
                             usableArea = sc.nextLine();
+                            if (Regex.checkRegexArea(usableArea) == false){
+                                System.out.println("you typed wrong please re-enter ahihi idiot");
+                            }
                         }while (!Regex.checkRegexArea(usableArea));
                         String rentalCosts;
                         do {
                             System.out.println("Input Rental Costs: ");
                             rentalCosts = sc.nextLine();
+                            if (Regex.checkRegexRentalCosts(rentalCosts) == false){
+                                System.out.println("you typed wrong please re-enter ahihi idiot");
+                            }
                         }while (!Regex.checkRegexRentalCosts(rentalCosts));
                         String numberPeople;
                         do {
                             System.out.println("Input Number People: ");
                             numberPeople = sc.nextLine();
+                            if (Regex.checkRegexNumberPeople(numberPeople) == false){
+                                System.out.println("you typed wrong please re-enter ahihi idiot");
+                            }
                         }while (!Regex.checkRegexNumberPeople(numberPeople));
                         String rentType;
                         do {
                             System.out.println("Input Rent Type: ");
                             rentType = sc.nextLine();
+                            if (Regex.checkRegexRentalType(rentType) == false){
+                                System.out.println("you typed wrong please re-enter ahihi idiot");
+                            }
                         }while (!Regex.checkRegexRentalType(rentType));
                         System.out.println("Input Free Service: ");
                         String freeService = sc.nextLine();
                         System.out.println("Number of uses: ");
                         int number = Integer.parseInt(sc.nextLine());
                         Facility room = new Room(serviceCode,serviceName,usableArea,rentalCosts,numberPeople,rentType,freeService);
-                        iFacilityService.add(room, number);
+                        iFacilityService.addRoom(room, number);
                     } else if (number1 == 2){
                         String serviceCode;
                         do {
                             System.out.println("Input Service Code: ");
                             serviceCode = sc.nextLine();
+                            if (Regex.checkRegexServiceCode(serviceCode) == false){
+                                System.out.println("you typed wrong please re-enter ahihi idiot");
+                            }
                         }while (!Regex.checkRegexServiceCode(serviceCode));
                         String serviceName;
                         do {
                             System.out.println("Input Service Name: ");
                             serviceName = sc.nextLine();
+                            if (Regex.checkRegexNameService(serviceName) == false){
+                                System.out.println("you typed wrong please re-enter ahihi idiot");
+                            }
                         }while (!Regex.checkRegexNameService(serviceName));
                         String usableArea;
                         do {
                             System.out.println("Input Usable Area: ");
                             usableArea = sc.nextLine();
+                            if (Regex.checkRegexArea(usableArea) == false){
+                                System.out.println("you typed wrong please re-enter ahihi idiot");
+                            }
                         }while (!Regex.checkRegexArea(usableArea));
                         String rentalCosts;
                         do {
                             System.out.println("Input Rental Costs: ");
                             rentalCosts = sc.nextLine();
+                            if (Regex.checkRegexRentalCosts(rentalCosts) == false){
+                                System.out.println("you typed wrong please re-enter ahihi idiot");
+                            }
                         }while (!Regex.checkRegexRentalCosts(rentalCosts));
                         String numberPeople;
                         do {
                             System.out.println("Input Number People: ");
                             numberPeople = sc.nextLine();
+                            if (Regex.checkRegexNumberPeople(numberPeople) == false){
+                                System.out.println("you typed wrong please re-enter ahihi idiot");
+                            }
                         }while (!Regex.checkRegexNumberPeople(numberPeople));
                         String rentType;
                         do {
                             System.out.println("Input Rent Type: ");
                             rentType = sc.nextLine();
+                            if (Regex.checkRegexRentalType(rentType) == false){
+                                System.out.println("you typed wrong please re-enter ahihi idiot");
+                            }
                         }while (!Regex.checkRegexRentalType(rentType));
                         System.out.println("Room standard: ");
                         String standardRoom = sc.nextLine();
@@ -100,16 +136,22 @@ public class DisplayFacilityManagement extends FuramaController{
                         do {
                             System.out.println("Pool area: ");
                             poolArea = sc.nextLine();
+                            if (Regex.checkRegexArea(poolArea) == false){
+                                System.out.println("you typed wrong please re-enter ahihi idiot");
+                            }
                         }while (!Regex.checkRegexArea(poolArea));
                         String floorNumber;
                         do {
                             System.out.println("Floors: ");
                             floorNumber = sc.nextLine();
+                            if (Regex.checkRegexNumberFloors(floorNumber) == false){
+                                System.out.println("you typed wrong please re-enter ahihi idiot");
+                            }
                         }while (!Regex.checkRegexNumberFloors(floorNumber));
                         System.out.println("Number of uses: ");
                         int number = Integer.parseInt(sc.nextLine());
                         Facility villa = new Villa(serviceCode,serviceName,usableArea,rentalCosts,numberPeople,rentType,standardRoom,poolArea,floorNumber);
-                        iFacilityService.add(villa, number);
+                        iFacilityService.addVilla(villa, number);
                     }else {
                         displayFacilityManagement();
                     }
@@ -118,7 +160,8 @@ public class DisplayFacilityManagement extends FuramaController{
                     iFacilityService.displayFacilityMaintenance();
                     break;
                 case 4:
-                    displayMainMenu();
+                    FuramaController furamaController = new FuramaController();
+                    furamaController.displayMainMenu();
                     break;
             }
         } while (true);

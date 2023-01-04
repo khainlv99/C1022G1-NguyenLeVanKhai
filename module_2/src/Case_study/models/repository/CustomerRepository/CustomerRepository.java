@@ -9,20 +9,17 @@ import java.util.List;
 import java.util.Scanner;
 
 public class CustomerRepository implements ICustomerRepository {
-    static List<Customer> customers = new LinkedList<>();
-    static {
-        customers.add(new Customer("Khai Nguyen", "03/08/1999", "Nam", "04809900644", "0702750320", "khainguyenlevan@gmail.com", "001", "Vip", "Đà Nẵng"));
-        writeFile(customers);
-    }
+
     public static void writeFile(List<Customer> list) {
         try {
-            FileWriter writer = new FileWriter("src\\Case_study\\customer.csv");
+            FileWriter writer = new FileWriter("src\\Case_study\\customer.csv",true);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
             for (Customer cus : list) {
                 bufferedWriter.write(cus.getCustomerID() + "," + cus.getFullName() + "," + cus.getDateOfBirth() + "," +
                         cus.getPhoneNumber() + "," + cus.getGender() + "," + cus.getIdentityCard() + "," +
                         cus.getEmail() + "," + cus.getCustomerType() + "," + cus.getAddress());
             }
+            bufferedWriter.newLine();
             bufferedWriter.close();
         } catch (Exception e) {
             e.printStackTrace();
@@ -60,6 +57,7 @@ public class CustomerRepository implements ICustomerRepository {
     }
     @Override
     public void add() {
+        List<Customer> customers = new LinkedList<>();
         Scanner scanner = new Scanner(System.in);
         String fullName, dateOfBirth, gender, identityCard, phoneNumber, email, customerID, customerType, address;
         System.out.println("Input fullName: ");
@@ -91,6 +89,7 @@ public class CustomerRepository implements ICustomerRepository {
         customer.setCustomerType(customerType);
         customer.setAddress(address);
         customers.add(customer);
+        writeFile(customers);
     }
 
     @Override
@@ -102,16 +101,18 @@ public class CustomerRepository implements ICustomerRepository {
 
     @Override
     public void edit(Customer customer) {
+        List<Customer> customers = readFile();
         for (int i = 0; i < customers.size() ; i++) {
             if (customers.get(i).getCustomerID().equals(customer.getCustomerID())){
                 customers.set(i,customer);
             }
         }
+        writeFile(customers);
     }
 
     @Override
     public Customer search(String maKhachHang) {
-        for (Customer cus: customers) {
+        for (Customer cus: readFile()) {
             if (cus.getCustomerID().equals(maKhachHang)){
                 return cus;
             }
