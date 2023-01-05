@@ -14,8 +14,14 @@ public class DisplayFacilityManagement extends FuramaController{
                 "4. Return main menu\n" +
                 "-------------------------");
         do {
-            System.out.print("Please enter your valid choice (1->4): ");
-            choice = Integer.parseInt(sc.nextLine());
+            try {
+                System.out.print("Please enter your valid choice (1->4): ");
+                choice = Integer.parseInt(sc.nextLine());
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
+                continue;
+            }
+
             switch (choice) {
                 case 1:
                     iFacilityService.displayFacility();
@@ -163,6 +169,8 @@ public class DisplayFacilityManagement extends FuramaController{
                     FuramaController furamaController = new FuramaController();
                     furamaController.displayMainMenu();
                     break;
+                default:
+                    throw new IllegalStateException("Unexpected value: " + choice);
             }
         } while (true);
     }

@@ -8,17 +8,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class EmployeeRepository implements IEmployeeRepository {
-    static List<Employee> employeeList = new ArrayList<>();
-
-    static {
-        employeeList.add(new Employee("Nguyen Khai", "03/08/1999", "Nam", "0480990007771", "0702750320", "Khainguyenlevan@gmail.com", "001", "Đại học", "Giup viec", "1300"));
-        employeeList.add(new Employee("Nguyen Khai1", "03/08/1999", "Nam", "0480990007772", "0702750320", "Khainguyenlevan@gmail.com", "002", "Đại học", "Giup viec", "1400"));
-        employeeList.add(new Employee("Nguyen Khai2", "03/08/1999", "Nam", "0480990007773", "0702750320", "Khainguyenlevan@gmail.com", "003", "Đại học", "Giup viec", "1500"));
-        employeeList.add(new Employee("Nguyen Khai3", "03/08/1999", "Nam", "0480990007774", "0702750320", "Khainguyenlevan@gmail.com", "004", "Đại học", "Giup viec", "1600"));
-        employeeList.add(new Employee("Nguyen Khai4", "03/08/1999", "Nam", "0480990007775", "0702750320", "Khainguyenlevan@gmail.com", "005", "Đại học", "Giup viec", "1700"));
-        writeFile(employeeList);
-    }
-
     public static void writeFile(List<Employee> list) {
         try {
             FileWriter writer = new FileWriter("src\\Case_study\\employee.csv");
@@ -36,6 +25,7 @@ public class EmployeeRepository implements IEmployeeRepository {
     }
 
     public static List<Employee> readFile() {
+        List<Employee> employeeList = new ArrayList<>();
         try {
             File file = new File("src\\Case_study\\employee.csv");
             if (!file.exists()) {
@@ -68,6 +58,7 @@ public class EmployeeRepository implements IEmployeeRepository {
 
     @Override
     public void add() {
+        List<Employee> employeeList = new ArrayList<>();
         String hoTen, ngaySinh, gioiTinh, chungMinhNhanDan, email, trinhDo, viTri, soDienThoai, maNhanVien, luong;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input Name: ");
@@ -92,29 +83,30 @@ public class EmployeeRepository implements IEmployeeRepository {
         luong = scanner.nextLine();
         Employee employee = new Employee(hoTen, ngaySinh, gioiTinh, chungMinhNhanDan, soDienThoai, email, maNhanVien, trinhDo, viTri, luong);
         employeeList.add(employee);
+        writeFile(employeeList);
     }
 
     @Override
     public void display() {
-        List<Employee> employeeList = readFile();
-        for (Employee elm:employeeList){
+        for (Employee elm:readFile()){
             System.out.println(elm);
         }
     }
 
     @Override
     public void edit(Employee employee) {
+        List<Employee> employeeList = readFile();
         for (int i = 0; i < employeeList.size(); i++) {
             if (employeeList.get(i).getEmployeeCode().equals(employee.getEmployeeCode())) {
                 employeeList.set(i, employee);
-                break;
             }
         }
+        writeFile(employeeList);
     }
 
     @Override
     public Employee search(String maNhanVien) {
-        for (Employee epl : employeeList) {
+        for (Employee epl : readFile()) {
             if (epl.getEmployeeCode().equals(maNhanVien))
                 return epl;
         }
@@ -123,6 +115,7 @@ public class EmployeeRepository implements IEmployeeRepository {
 
     @Override
     public void delete() {
+        List<Employee> employeeList = new ArrayList<>();
         String id;
         System.out.print("Nhập vào id nhân viên : ");
         Scanner scanner = new Scanner(System.in);
