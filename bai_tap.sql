@@ -22,6 +22,7 @@ insert into class(id,name) value (4,'Duong Minh Truong');
 select * from class;
 select id from class;
 select name from class;
+delete from class where id = 1;
 create table teacher(
 	`id` int primary key not null,
     `name` varchar(45) null,
@@ -37,3 +38,4 @@ select id from teacher;
 select name from teacher where id = 2;
 select age from teacher where id = 1;
 select country from teacher where id = 1;
+delete from class where id = 1;
