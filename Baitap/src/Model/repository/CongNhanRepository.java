@@ -9,77 +9,81 @@ import java.util.Scanner;
 
 public class CongNhanRepository implements ICongNhanRepository {
     Scanner scanner = new Scanner(System.in);
+
+    public static List<CongNhan> readFile (){
+        List<CongNhan> congNhans1 = new ArrayList<>();
+        FileReader fileReader = null;
+        BufferedReader bufferedReader = null;
+        try {
+            fileReader = new FileReader("src\\CongNhan.csv");
+            bufferedReader = new BufferedReader(fileReader);
+            String line;
+            while ((line = bufferedReader.readLine()) != null){
+                String arr[]=line.split(",");
+                String maNhanVien = arr[0];
+                String ten = arr[1];
+                String email = arr[2];
+                String diaChi = arr[3];
+                CongNhan cns = new CongNhan(maNhanVien,ten,email,diaChi);
+                congNhans1.add(cns);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return congNhans1;
+    }
+    public static void writerFile(List<CongNhan> congNhans2){
+        FileWriter fileWriter = null;
+        BufferedWriter bufferedWriter = null;
+        try {
+            fileWriter = new FileWriter("src\\CongNhan.csv",true);
+            bufferedWriter = new BufferedWriter(fileWriter);
+            for (CongNhan cns: congNhans2) {
+                bufferedWriter.write(cns.getMaNhanVien()+ ","+ cns.getTen()+","+cns.getEmail()+","+cns.getDiaChi());
+            }
+            bufferedWriter.newLine();
+            bufferedWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
     @Override
     public void display() {
-        for (CongNhan cns:readFile()){
+        for (CongNhan cns: readFile()) {
             System.out.println(cns);
         }
+
     }
 
     @Override
     public void add() {
-        List<CongNhan> congNhans = new ArrayList<>();
-        String maNhanVien, ten, email, diaChi;
-        System.out.println("Vui lòng nhập mã nhân viên: ");
+        List<CongNhan> congNhans1 = new ArrayList<>();
+        String maNhanVien,name,email,diaChi;
+        System.out.println("Input maNhanVien: ");
         maNhanVien = scanner.nextLine();
-        System.out.println("Vui lòng nhập tên: ");
-        ten = scanner.nextLine();
-        System.out.println("Vui lòng nhập email: ");
+        System.out.println("Input name: ");
+        name = scanner.nextLine();
+        System.out.println("Input email: ");
         email = scanner.nextLine();
-        System.out.println("Vui lòng nhập địa chỉ: ");
+        System.out.println("Input diaChi: ");
         diaChi = scanner.nextLine();
-        CongNhan congNhan = new CongNhan(maNhanVien, ten, email, diaChi);
-        congNhans.add(congNhan);
-        writeFile(congNhans);
+        CongNhan congNhan = new CongNhan(maNhanVien,name,email,diaChi);
+        congNhans1.add(congNhan);
+        writerFile(congNhans1);
     }
 
     @Override
     public void search() {
-        System.out.println("Nhập mã nhân viên");
-        String ten = scanner.nextLine();
-        for (CongNhan cns : readFile()) {
-            if (cns.getTen().contains(ten)){
-                System.out.println(cns);
+        List<CongNhan> congNhans1 = readFile();
+        System.out.println("Nhap ten can tim: ");
+        String name1 = scanner.nextLine();
+        for (int i = 0; i < congNhans1.size(); i++) {
+            if (congNhans1.get(i).getTen().contains(name1)){
+                System.out.println(congNhans1);
             }
-        }
-    }
-
-    public static List<CongNhan> readFile() {
-        List<CongNhan> cns = new ArrayList<>();
-        try {
-            File file = new File("src\\CongNhan.csv");
-            if (!file.exists()) {
-                throw new FileNotFoundException();
-            }
-            BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
-            String line;
-            while ((line = bufferedReader.readLine()) != null) {
-                String[] temp = line.split(",");
-                String maNhanVien = temp[0];
-                String name = temp[1];
-                String email = temp[2];
-                String diaChi = temp[3];
-                CongNhan cns1 = new CongNhan(maNhanVien,name,email,diaChi);
-                cns.add(cns1);
-            }
-            bufferedReader.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return cns;
-    }
-    public static void writeFile(List<CongNhan> list) {
-        try {
-            FileWriter writer = new FileWriter("src\\CongNhan.csv",true);
-            BufferedWriter bufferedWriter = new BufferedWriter(writer);
-            for (CongNhan cns : list) {
-                bufferedWriter.write(cns.toString());
-            }
-            bufferedWriter.newLine();
-            bufferedWriter.close();
-
-        } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 }
