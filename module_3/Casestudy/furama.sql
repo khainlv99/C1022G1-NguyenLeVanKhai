@@ -181,3 +181,4 @@ insert into hop_dong_chi_tiet(so_luong,ma_hop_dong,ma_dich_vu_di_kem) value (1,1
 insert into hop_dong_chi_tiet(so_luong,ma_hop_dong,ma_dich_vu_di_kem) value (2,1,2);
 insert into hop_dong_chi_tiet(so_luong,ma_hop_dong,ma_dich_vu_di_kem) value (2,12,2);
 select * from hop_dong_chi_tiet;
+drop database furama;
