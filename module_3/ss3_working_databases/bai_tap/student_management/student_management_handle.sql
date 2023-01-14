@@ -7,7 +7,9 @@ select * from student where student_name like 'h%';
 select * from class where month(start_date) = 12;
 
 -- Hiển thị tất cả các thông tin môn học có credit trong khoảng từ 3-5
-select * from `subject` having credit >= 3 and credit <=5;
+select * from `subject` 
+where credit
+between 3 and 5;
 
 -- Thay đổi mã lớp(ClassID) của sinh viên có tên ‘Hung’ là 2.
 set SQL_SAFE_UPDATES = 0;
