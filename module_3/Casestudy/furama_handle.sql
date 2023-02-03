@@ -399,6 +399,8 @@ from
 -- task 18:  Xóa những khách hàng có hợp đồng trước năm 2021 (chú ý ràng buộc giữa các bảng).
 set 
   foreign_key_checks = 0;
+SET SQL_SAFE_UPDATES = 0;
+-- fix lỗi 1175
 delete from 
   khach_hang kh 
 where 
