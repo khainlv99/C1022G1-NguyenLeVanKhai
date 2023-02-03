@@ -1,0 +1,21 @@
+h1{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+h4{
+    width: 41.5%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+p{
+    font-weight: lighter;
+    text-align: justify;
+    text-indent: 1cm;
+}
+#test{
+    width: 41.5%;
+    padding: 10px;
+}
+sup{
+    font-size: 10px;
+}
