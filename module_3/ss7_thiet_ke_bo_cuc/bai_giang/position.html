@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div.static {
+            position: static;
+            border: 3px solid #73AD21;
+        }
+        div.relative {
+            position: relative;
+            left: 30px;
+            border: 3px solid #73AD21;
+        }
+        div.fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid #73AD21;
+        }
+        img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<!--<h2>position: static;</h2>-->
+
+<!--<p>An element with position: static; is not positioned in any special way; it is-->
+<!--    always positioned according to the normal flow of the page:</p>-->
+
+<!--<div class="static">-->
+<!--    This div element has position: static;-->
+<!--</div>-->
+<!--<h2>position: relative;</h2>-->
+
+<!--<p>An element with position: relative; is positioned relative to its normal position:</p>-->
+
+<!--<div class="relative">-->
+<!--    This div element has position: relative;-->
+<!--</div>-->
+<!--<h2>position: fixed;</h2>-->
+
+<!--<p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</p>-->
+
+<!--<div class="fixed">-->
+<!--    This div element has position: fixed;-->
+<!--</div>-->
+<h1>Tiêu đề</h1>
+<img src="http://bob.codegym.vn/assets/images/Codegym-bob-xh100.png" width="500" height="140">
+<p>Ảnh có z-index là -1 nên nó sẽ nằm sau văn bản.</p>
+</body>
+</html>
