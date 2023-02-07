@@ -1,29 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a3182e36-50eb-4fee-8744-e560d823499a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Baitap/src/CongNhan.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Baitap/src/Controller/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Baitap/src/Model/model/CongNhan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Baitap/src/Model/repository/CongNhanRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Baitap/src/Model/repository/ICongNhanRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Baitap/src/Model/service/CongNhanService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Baitap/src/Model/service/ICongNhanService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/Case_study/controllers/DisplayFacilityManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/out/production/module_2/Case_study/controllers/DisplayFacilityManagement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/Case_study/customer.csv" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/out/production/module_2/Case_study/customer.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/Case_study/models/repository/EmployeeRepository/EmployeeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/out/production/module_2/Case_study/models/repository/EmployeeRepository/EmployeeRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/Case_study/models/service/FacilityService/IFacilityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/out/production/module_2/Case_study/models/service/FacilityService/IFacilityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/Case_study/room.csv" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/out/production/module_2/Case_study/room.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/out/production/module_2/Case_study/villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/out/production/module_2/Case_study/villa.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/src/Case_study/customer.csv" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/Case_study/customer.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/src/Case_study/employee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/Case_study/employee.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/src/Case_study/models/repository/EmployeeRepository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/Case_study/models/repository/EmployeeRepository/EmployeeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_2/src/Case_study/room.csv" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/Case_study/room.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_3/ss8_bootstrap/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,11 +44,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/module_2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
     <configuration name="ChuyenDoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -54,11 +71,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.ChuyenDoi" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -73,17 +85,32 @@
       <workItem from="1670991898996" duration="57000" />
       <workItem from="1672063713600" duration="40000" />
       <workItem from="1672819441787" duration="13000" />
+      <workItem from="1675741752833" duration="4013000" />
+      <workItem from="1675757692531" duration="1279000" />
+      <workItem from="1675759818495" duration="1818000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="758" y="156" key="FileChooserDialogImpl" timestamp="1672819453818">
+    <state x="758" y="156" key="FileChooserDialogImpl" timestamp="1675755488593">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="758" y="156" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1672819453818" />
+    <state x="758" y="156" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1675755488593" />
     <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1672063753155">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
