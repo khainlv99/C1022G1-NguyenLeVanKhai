@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <style>
+        *{
+            font-family: "Roboto Light";
+        }
+        .csw-media {
+            overflow: hidden;
+            display: inline-block;
+        }
+        .csw-media img {
+            transition: 0.8s;
+        }
+        .csw-media:hover img {
+            transform: scale(1.2, 1.2);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="fs-4">Responsive Image Gallery</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-2 mb-2">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="fs-6"> Resize the browser window to see the effect.</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="width: 100%;">
+                    <a class="csw-media" target="_blank" href="img/1.jpg" >
+                        <img src="img/1.jpg" class="card-img-top" alt="Anh dep">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text text-center">Add a description of the image here</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 100%;">
+                    <a class="csw-media" target="_blank" href="img/2.jpg">
+                        <img src="img/2.jpg" class="card-img-top" alt="Anh dep">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text text-center">Add a description of the image here</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 100%;">
+                    <a class="csw-media" target="_blank" href="img/3.jpg">
+                        <img src="img/3.jpg" class="card-img-top" alt="Anh dep">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text text-center">Add a description of the image here</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="csw-media" class="card" style="width: 100%;">
+                    <a target="_blank" href="img/4.jpg">
+                        <img src="img/4.jpg" class="card-img-top" alt="Anh dep">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text text-center">Add a description of the image here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-12">
+                <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger
+                    than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show
+                    two images side by side. For screens smaller than 500px, the images will stack vertically
+                    (100%).</p>
+            </div>
+        </div>
+    </div>
+</header>
+<script src="../../bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+</body>
+<script>
+</script>
+</html>
