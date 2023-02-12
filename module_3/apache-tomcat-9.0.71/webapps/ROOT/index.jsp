@@ -48,19 +48,6 @@
             filter: brightness(0.6);
         }
 
-        h2::after {
-            content: "";
-            width: 140px;
-            position: absolute;
-            margin: 0 auto;
-            height: 3px;
-            background: #db584e;
-            left: 0;
-            right: 0;
-            bottom: -10px;
-            opacity: .8;
-        }
-
         .col-center {
             margin: 0 auto;
             float: none !important;
@@ -248,7 +235,7 @@
         </div>
     </div>
 </header>
-<div class="row">
+<div class="row" style="margin: 0px;padding: 0px">
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
@@ -277,7 +264,7 @@
         </button>
     </div>
 </div>
-<div class="row">
+<div class="row" style="margin: 0px;padding: 0px">
     <div class="container-fluid pt-5">
         <div class="row px-xl-5 pb-3">
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
@@ -308,7 +295,7 @@
     </div>
 </div>
 <div class="container-fluid">
-    <div class="row">
+    <div class="row" style="margin: 0px;padding: 0px">
         <main>
             <div class="text">
                 <h1>QUÀ TẶNG VALENTINE - ƯU ĐÃI NHÂN ĐÔI</h1>
@@ -415,11 +402,12 @@
         </main>
     </div>
 </div>
-<div class="row px-xl-5 pb-3">
+<div class="row px-xl-5 pb-3" style="margin: 0px;padding: 0px">
     <div class="container pt-5">
         <div class="col-12 col-center m-auto">
-            <h2 style="color: #333; text-align: center;text-transform: uppercase;font-family: 'Noto Sans', sans-serif;font-weight: bold;position: relative;margin: 30px 0 60px;">
+            <h2 style="color: #333; text-align: center;text-transform: uppercase;font-family: 'Noto Sans', sans-serif;font-weight: bold;position: relative;margin: 30px 0 10px;">
                 Người sử dụng website</h2>
+            <hr style="height: 3px; width: 30%; margin: 0 auto;" class="bg-warning">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Carousel -->
                 <div class="carousel-inner">
@@ -452,7 +440,7 @@
 </div>
 <footer>
     <div class="container">
-        <div class="row">
+        <div class="row" style="margin: 0px;padding: 0px">
             <div class="col-lg-3 col-sm-6">
                 <div class="single-box">
                     <img src="img/logo.png" alt="" height="60" width="60">
