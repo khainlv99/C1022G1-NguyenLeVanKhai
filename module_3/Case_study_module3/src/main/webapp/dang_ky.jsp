@@ -207,7 +207,7 @@
                         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
                             style="--bs-scroll-height: 100px;">
                             <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="#">Trang chủ</a>
+                                <a class="nav-link active text-white" aria-current="page" href="index.jsp">Trang chủ</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active text-white" aria-current="page" href="#">Sản phẩm</a>
@@ -219,10 +219,10 @@
                                 <a class="nav-link active text-white" aria-current="page" href="#">Liên hệ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="#">Đăng ký</a>
+                                <a class="nav-link active text-white" aria-current="page" href="dang_ky.jsp">Đăng ký</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="login.jsp">Đăng nhập</a>
+                                <a class="nav-link active text-white" aria-current="page" href="dang_nhap.jsp">Đăng nhập</a>
                             </li>
                         </ul>
                         <form class="d-flex" style="margin-top: 16px; margin-right: 10px">
@@ -280,28 +280,24 @@
                                             <input placeholder="Tên đăng nhập" type="text" id="form3Example1c" class="form-control" />
                                         </div>
                                     </div>
-
                                     <div class="d-flex flex-row align-items-center mb-4">
                                         <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                         <div class="form-outline flex-fill mb-0">
                                             <input placeholder="Email" type="email" id="form3Example3c" class="form-control" />
                                         </div>
                                     </div>
-
                                     <div class="d-flex flex-row align-items-center mb-4">
                                         <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                                         <div class="form-outline flex-fill mb-0">
                                             <input placeholder="Mật khẩu" type="password" id="form3Example4c" class="form-control" />
                                         </div>
                                     </div>
-
                                     <div class="d-flex flex-row align-items-center mb-4">
                                         <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                                         <div class="form-outline flex-fill mb-0">
                                             <input placeholder="Nhập lại mật khẩu" type="password" id="form3Example4cd" class="form-control" />
                                         </div>
                                     </div>
-
                                     <div class="form-check d-flex justify-content-center mb-5">
                                         <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
                                         <label class="form-check-label" >

@@ -207,7 +207,7 @@
                         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
                             style="--bs-scroll-height: 100px;">
                             <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="#">Trang chủ</a>
+                                <a class="nav-link active text-white" aria-current="page" href="index.jsp">Trang chủ</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active text-white" aria-current="page" href="#">Sản phẩm</a>
@@ -219,10 +219,10 @@
                                 <a class="nav-link active text-white" aria-current="page" href="#">Liên hệ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="#">Đăng ký</a>
+                                <a class="nav-link active text-white" aria-current="page" href="dang_ky.jsp">Đăng ký</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="login.jsp">Đăng nhập</a>
+                                <a class="nav-link active text-white" aria-current="page" href="dang_nhap.jsp">Đăng nhập</a>
                             </li>
                         </ul>
                         <form class="d-flex" style="margin-top: 16px; margin-right: 10px">
