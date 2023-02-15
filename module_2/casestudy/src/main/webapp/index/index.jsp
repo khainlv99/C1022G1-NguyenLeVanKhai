@@ -222,7 +222,7 @@
                                 <a class="nav-link active text-white" aria-current="page" href="dang_ky.jsp">Đăng ký</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="dang_nhap.jsp">Đăng nhập</a>
+                                <a class="nav-link active text-white" aria-current="page" href="login.jsp">Đăng nhập</a>
                             </li>
                         </ul>
                         <form class="d-flex" style="margin-top: 16px; margin-right: 10px">
