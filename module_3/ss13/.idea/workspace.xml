@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5abcf5b-4607-4ec5-ab49-f096593bf7ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/BaiTap/src/main/java/com/example/thuchanh/dao/IUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaiTap/src/main/java/com/example/thuchanh/service/IUserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaiTap/src/main/java/com/example/thuchanh/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaiTap/src/main/java/com/example/thuchanh/service/UserDAO.java" afterDir="false" />
-    </list>
+    <list default="true" id="a5abcf5b-4607-4ec5-ab49-f096593bf7ae" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +21,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../module_2/casestudy" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -37,10 +34,17 @@
       <option name="presentableId" value="Default" />
       <updated>1676467384916</updated>
       <workItem from="1676467386430" duration="51000" />
+      <workItem from="1676515916559" duration="149000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1676516065663">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1676516065663" />
   </component>
 </project>

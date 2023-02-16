@@ -12,6 +12,6 @@
     <title>Title</title>
 </head>
 <body>
-<c:redirect url="/index"></c:redirect>
+<c:redirect url="/admin"></c:redirect>
 </body>
 </html>
