@@ -58,13 +58,13 @@ public class ProductService implements IProductService {
     }
 
     @Override
-    public void insertUser(Product user) throws SQLException {
+    public void insertUser(Product product) throws SQLException {
         System.out.println(INSERT_USERS_SQL);
         try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
-            preparedStatement.setString(1, user.getTenSP());
-            preparedStatement.setString(2, user.getDonGia());
-            preparedStatement.setString(3, user.getSoLuong());
-            preparedStatement.setString(4, user.getLoaiSanPham());
+            preparedStatement.setString(1, product.getTenSP());
+            preparedStatement.setString(2, product.getDonGia());
+            preparedStatement.setString(3, product.getSoLuong());
+            preparedStatement.setString(4, product.getLoaiSanPham());
             System.out.println(preparedStatement);
             preparedStatement.executeUpdate();
         } catch (SQLException e) {

@@ -48,6 +48,7 @@ public class ProductServlet extends HttpServlet {
         try {
             switch (action) {
                 case "create":
+                    showNewForm(request, response);
                     break;
                 case "edit":
                     break;
@@ -70,13 +71,17 @@ public class ProductServlet extends HttpServlet {
     }
     private void insertUser(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {
-        int idSP = request.getIntHeader("id_sp");
-        String tenSP = request.getParameter("ten_sp");
-        String donGia = request.getParameter("don_gia");
-        String soLuong = request.getParameter("so_luong");
-        String loaiSanPham = request.getParameter("id_lsp");
-        Product newUser = new Product(idSP,tenSP,donGia,soLuong,loaiSanPham);
-        productService.insertUser(newUser);
+        String tenSP = request.getParameter("tenSP");
+        String donGia = request.getParameter("donGia");
+        String soLuong = request.getParameter("soLuong");
+        String loaiSanPham = request.getParameter("loaiSanPham");
+        Product product = new Product(tenSP,donGia,soLuong,loaiSanPham);
+        productService.insertUser(product);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("admin/create.jsp");
+        dispatcher.forward(request, response);
+    }
+    private void showNewForm(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         RequestDispatcher dispatcher = request.getRequestDispatcher("admin/create.jsp");
         dispatcher.forward(request, response);
     }

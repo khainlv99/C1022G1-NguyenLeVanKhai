@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface IProductService {
      List<Product> selectAllUsers();
-     void insertUser(Product user) throws SQLException;
+     void insertUser(Product product) throws SQLException;
 }

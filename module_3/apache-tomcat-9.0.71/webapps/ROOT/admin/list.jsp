@@ -407,7 +407,7 @@
                             <td>
                                 <button style="width: 67px; height: 26px; border: none; background: black"><a href="/admin?action=create" style="text-decoration: none;color: white">Add</a></button>
                                 <button style="width: 67px; height: 26px; border: none; background: black"><a href="/users?action=edit&id=${user.id}" style="text-decoration: none;color: white">Edit</a></button>
-                                <button style="width: 67px; height: 26px; border: none; background: black"><a href="/users?action=delete&id=${user.id}" style="text-decoration: none;color: white">Delete</a></button>
+                                <button style="width: 67px; height: 26px; border: none; background: black"><a href="/users?action=edit&id=${user.id}" style="text-decoration: none;color: white">Delete</a></button>
                             </td>
                         </tr>
                     </c:forEach>
