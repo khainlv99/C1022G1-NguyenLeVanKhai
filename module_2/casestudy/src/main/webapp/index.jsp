@@ -12,6 +12,6 @@
     <title>Title</title>
 </head>
 <body>
-<c:redirect url="/admin"></c:redirect>
+<c:redirect url="/index/index.jsp"></c:redirect>
 </body>
 </html>

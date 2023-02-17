@@ -273,44 +273,36 @@
                         <div class="row justify-content-center">
                             <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
                                 <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Đăng ký</p>
-                                <form class="mx-1 mx-md-4">
+                                <form class="mx-1 mx-md-4" action="/index?action=create" method="post">
                                     <div class="d-flex flex-row align-items-center mb-4">
                                         <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                         <div class="form-outline flex-fill mb-0">
-                                            <input placeholder="Tên đăng nhập" type="text" id="form3Example1c" class="form-control" />
+                                            <input placeholder="Tên đăng nhập" type="text" id="tenKH" class="form-control" name="tenKH"/>
                                         </div>
                                     </div>
                                     <div class="d-flex flex-row align-items-center mb-4">
                                         <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                         <div class="form-outline flex-fill mb-0">
-                                            <input placeholder="Email" type="email" id="form3Example3c" class="form-control" />
+                                            <input placeholder="Số điện thoại" id="soDienThoai" class="form-control" name="soDienThoai"/>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <input placeholder="Email" type="email" id="email" class="form-control" name="email"/>
                                         </div>
                                     </div>
                                     <div class="d-flex flex-row align-items-center mb-4">
                                         <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                                         <div class="form-outline flex-fill mb-0">
-                                            <input placeholder="Mật khẩu" type="password" id="form3Example4c" class="form-control" />
+                                            <input placeholder="Mật khẩu" type="password" id="matKhau" class="form-control" name="matKhau"/>
                                         </div>
                                     </div>
-                                    <div class="d-flex flex-row align-items-center mb-4">
-                                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
-                                        <div class="form-outline flex-fill mb-0">
-                                            <input placeholder="Nhập lại mật khẩu" type="password" id="form3Example4cd" class="form-control" />
-                                        </div>
-                                    </div>
-                                    <div class="form-check d-flex justify-content-center mb-5">
-                                        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
-                                        <label class="form-check-label" >
-                                            Tôi đồng ý tất cả các yêu cầu <a href="#!">Điều khoản dịch vụ</a>
-                                        </label>
-                                    </div>
-
                                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                                        <button type="button" class="btn btn-primary btn-lg">Đăng ký</button>
+                                        <input type="submit" value="Đăng ký"/>
                                     </div>
 
                                 </form>
-
                             </div>
                             <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
 
